@@ -1,3 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif; 
+    position: relative;
+    width: 1400px;
+    background: #FFFFFF;
 }
