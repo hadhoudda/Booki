@@ -1,6 +1,42 @@
 body{
     font-family: 'Raleway', sans-serif; 
     position: relative;
-    width: 1400px;
+    width: 100%;
     background: #FFFFFF;
+}
+main{
+  margin-left: 3%; 
+  margin-right: 3%; 
+}
+.logo-booki{
+    width: 4%;
+    height: 29 px;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+.menu{
+    color: black;
+    size: 1 em;
+    width: 27%;
+    height: 19px;
+    margin-left: 70%;
+    margin-top: 3.5%;
+
+
+    
+}
+.rechercher-filtre label{
+    Width :3.5%;
+    Height :3.5%;
+    border: 1px solid #F2F2F2;
+    border-radius:  15px 0px  0px 15px;
+    background-color: #F2F2F2;
+
+}
+.rechercher-filtre button{
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    size: 1.3em;
 }

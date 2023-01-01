@@ -14,18 +14,19 @@
     </head>
     <body>
         <header>
-            <div class="entete">
+            <div class="logo-booki">
                 <img src="images//booki.png" alt="logo booki" title="logo Booki">  
             </div>
-        </header>
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li> Hébergement</li>
-                    <li> Activités </li>
-                </ul>
-            </div>
-        </nav>
+            <nav class="menu">
+                <table>
+                    <tr> Hébergement</tr>
+                    <tr> Activités </tr>
+                </table>
+            </nav>
+      
+        </header>    
+
+        
         <main>
             <!--section rechercher et filtres-->
             <section class="rechercher"> 
@@ -34,15 +35,21 @@
                    En plein centre-ville ou en pleine nature
                 </p>
                 <div class="rechercher-filtre">
-                    <form class="rechercher-ville">
+                    <form class="rechercher-ville" method="get" action="" >
+                        <label for="ville"><i class="fa-solid fa-location-dot" style="color:black;"></i></label>
+                        <input type="search" id="ville" value="Marseille,France" required>
+                        <button>Rechercher</button>
+                    </form>
+                    <form class="filtre">
+
 
                     </form>
-                    <div class="filtre">
-
-
-                    </div>
                 </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p>
+                <i class="fa-sharp fa-solid fa-circle-exclamation" style="color: #0065FC;" > </i>
+                Plus de 500 logements sont disponibles dans cette ville
+                </p>
+                
             </section>
             <!--fin section rechercher-->
             <!--section hébergement et populaires-->
@@ -56,7 +63,7 @@
                             <p>
                             <h3>Auberge La Canebière</h3>
                             Nuit à partir de 25<strong>€</strong> 
-                           </p> 
+                            </p> 
                             <div class="star">
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
@@ -152,7 +159,9 @@
                 <!--fin partie hebergement-->
                 <!--partie les plus populaires-->
                 <article class="plus-populaies">
-                    <h2> Les plus populaires</h2>
+                    <header>
+                        <h2> Les plus populaires</h2>
+                    </header>
                     <article class="populaire">
                         <img src="Images/hotel_soleil.jpg" alt="Hôtel Le soleil du matin" title="photo de l'hôtel Le soleil du matin">
                         <article class="photo">
@@ -256,9 +265,7 @@
                     <ul>
                         <li>Centre d'aide</li>
                         <li>Nous contacter</li>
-                    </ul>
-                        
-
+                    </ul>        
                 </div>
             </div>
 
