@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
        <meta charset="utf-8" >
-       <meta name="viewport" width="768">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
        <title>Agence de voyage Booki</title>
        <link href="css/style.css" rel="stylesheet">
        <link href="css/normalize.css" rel="stylesheet">
@@ -18,10 +18,11 @@
                 <img src="images//booki.png" alt="logo booki" title="logo Booki">  
             </div>
             <nav class="menu">
-                <table>
-                    <tr> Hébergement</tr>
-                    <tr> Activités </tr>
-                </table>
+                <ul>
+                    <li class="menu-1"><a href="#">Hébergement</a></li> 
+                    <li class="menu-2"><a href="#"> Activités </a></li>
+                </ul>
+                
             </nav>
       
         </header>    
@@ -40,10 +41,26 @@
                         <input type="search" id="ville" value="Marseille,France" required>
                         <button>Rechercher</button>
                     </form>
-                    <form class="filtre">
-
-
-                    </form>
+                    <ul class="filtre">
+                        <li>
+                            Filtres
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-money-bill-wave" style="color: #0065FC ;"></i>
+                            Economique</li>
+                        <li>
+                            <i class="fa-solid fa-person-dress" style="color: #0065FC ;"></i>
+                            Familial
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-heart" style="color: #0065FC ;"></i>
+                            Romantique
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-dog" style="color: #0065FC ;"></i>
+                            Animaux autorisés
+                        </li>
+                    </ul>
                 </div>
                 <p>
                 <i class="fa-sharp fa-solid fa-circle-exclamation" style="color: #0065FC;" > </i>
@@ -55,7 +72,7 @@
             <!--section hébergement et populaires-->
             <section class="hebergement-populaires">
             <!--partie hebergement-->
-                <div class="hebergement">
+                <div class="container-hebergement">
                     <h2> Hébergement à Marseille</h2>
                     <div class="phots-hebergements">
                         <img src="Images/auberge_canebiere.jpg" alt="Auberge la canebiere" title="photo d'Auberge la Canebière">
@@ -69,7 +86,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                           
                         </div>
@@ -86,7 +103,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                          </div>
                     
@@ -102,7 +119,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                          </div>
                     </div>
@@ -118,7 +135,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                          </div>
                     </div>
@@ -134,7 +151,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                          </div>
                     </div>
@@ -150,7 +167,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                          </div>
                     </div>
@@ -158,7 +175,7 @@
                 </div>
                 <!--fin partie hebergement-->
                 <!--partie les plus populaires-->
-                <article class="plus-populaies">
+                <article class="continer-plus-populaies">
                     <header>
                         <h2> Les plus populaires</h2>
                     </header>
@@ -174,7 +191,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                         </article>
                     </article>
@@ -190,7 +207,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                         </article>
                     </article>
@@ -206,7 +223,7 @@
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC;" ></i>
                                 <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
-                                <i class="fa-solid fa-star" style="color: #0065FC ;" ></i>
+                                <i class="fa-solid fa-star" style="color: #F2F2F2 ;" ></i>
                             </div>
                         </article>
                     </article>
@@ -216,60 +233,45 @@
             </section>
             <!--fin section hebergement et populaires-->
             <!--section actvités à Marseille-->
-            <section>
-                <div class="activites-marseille">
-                    <figure class="activite">
-                        <img src="Images/vieux_port.jpg" alt="Vieux-Port">
-                        <figcaption>Vieux-Port</figcaption> 
-                    </figure>
-                    <figure class="activite">
-                        <img src="Images/fort-de-pomegues.jpg" alt="Fort de Pomègues" >
-                        <figcaption>Fort de Pomègues</figcaption>
-                    </figure>
-                    <figure class="activite">
-                        <img src="Images/parc_national.jpg" alt="Parc national des Calanques" ">
-                        <figcaption>Parc national des Calanques</figcaption>
-                    </figure>
-                    <figure class="activite">
-                        <img src="Images/notre_dame.jpg" alt="Notre-Dame-de-la-Garde" >
-                        <figcaption>Notre-Dame-de-la-Garde</figcaption>
-                    </figure>
-                    
-                </div>
+            <section class="container-activites">
+                <figure>
+                    <img src="Images/vieux_port.jpg" alt="Vieux-Port" width="302px" height="444px">
+                    <figcaption>Vieux-Port</figcaption> 
+                </figure>
+                <figure>
+                    <img src="Images/fort_de_pomegues.jpg" alt="Fort de Pomègues" width="202px" height="444px" >
+                    <figcaption>Fort de Pomègues</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/parc_national.jpg" alt="Parc national des Calanques"  width="202px" height="444px">
+                    <figcaption>Parc national des Calanques</figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/notre_dame.jpg" alt="Notre-Dame-de-la-Garde" width="202px" height="444px">
+                    <figcaption>Notre-Dame-de-la-Garde</figcaption>
+                </figure>
             </section>
                     
            <!--section actvités à Marseille-->        
         </main>
         <!--pied de page-->
         <footer>
-            <div class="pied-de-page">
-                <div class="pied">
-                    <h3>A propos</h3>
-                    <ul>
-                        <li>Fonctionnement du site </li>
-                        <li>Conditions générales</li>
-                        <li>Données et confidentialité</li>
-                    </ul>
-                    
-                    </div>
-                    <div class="pied">
-                    <h3>Nos hébergements</h3>
-                    <ul>
-                        <li>Charte qualité</li>
-                        <li> Propose votre hôtel</li>
-                    </ul>
-                                           
-                </div>
-                    <div class="pied">
-                    <h3>Assistance</h3>
-                    <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
-                    </ul>        
-                </div>
-            </div>
-
-        </footer>
+            <ul class="containre-pied" >
+                <li><h3>A propos</h3></li>
+                <li>Fonctionnement du site </li>
+                <li>Conditions générales</li>
+                <li>Données et confidentialité</li>
+            </ul>
+            <ul class="containre-pied">
+                <li><h3>Nos hébergements</h3></li>
+                <li>Charte qualité</li>
+                <li> Propose votre hôtel</li>
+            </ul>
+            <ul class="containre-pied">
+                <li> <h3>Assistance</h3></li>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul></footer>
     </body>
 
 </html>
