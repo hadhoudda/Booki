@@ -1,148 +1,36 @@
 body{
-    font-family: 'Raleway', sans-serif; 
-    position: relative;
-    width: 100%;
-    background: #FFFFFF;
-}
-main{
-    margin-left: 3%; 
-    margin-right: 3%; 
-  }
-/*proprietes css pied de page*/
-footer{
-    
-    padding-top: 30px;
-    padding-bottom: 7.58%;
-    margin-top: 54px;
-    background-color: #F2F2F2;
-    margin-left: 3.35%;
-    margin-right: 4.19%;
-    margin-bottom: 0; 
-
-    display: flex ;  
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   }
- .containre-pied{
-    list-style: none;
-    width: 27%;
- }
- @media screen and (max-width:768px) {
-    footer {
-        flex-direction: column;
-    }
-   
- }
- /* fin proprietes css pied de page*/
-
-.logo-booki{
-    width: 4.35%;
-    height: 29 px;
-    margin-left: 3.92%;
-    margin-top: 3.14%;
-}
-.menu ul{
-    list-style-type: none;
-    display : inline-block;
-    Width:27.21;
-    Height:19px;
-    margin-left: 70.14%;
-    margin-top: 3.42%;
-
-}
-.menu li{
-    display : inline-block;
-    
-}
-.menu-1{
-    left: 36.22%;
-    right: 34.12%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-style: normal;
-    font-weight: 500px;
-    font-size: 16px;
-    text-decoration: none;
-    line-height: 1.35%;
-    text-align: center;
-    color: black;
-    border-top: #FFFFFF;
-        
-     
-}
-.menu-1:hover{
-    color: #0065FC;
-    border-top: #0065FC;
-
-}
-.menu-2{
-    left: 83.46%;
-    right: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #000000;
-}
-.filtre{
-    list-style-type: none;
-   
-}
-.filtre li {
-    display : inline-block;
-}
-
-label{
-    Width :3.5%;
-    Height :3.5%;
-    border: 1px solid #F2F2F2;
-    border-radius:  15px 0px  0px 15px;
-    background-color: #F2F2F2;
-
-}
-.rechercher-filtre button{
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    background-color: #0065FC;
-    color: #FFFFFF;
-    size: 1.3em;
-}
-button{
-    position: absolute;
-width: 159px;
-height: 51px;
-left: 408px;
-top: 304px;
-    display: flex;
-    flex-direction: row;
-align-items: center;
-padding: 15px 16px;
-gap: 10px;
-
-}
-figure{
-    border-radius: 20px;
-    
-}
-
-figcaption{
     background-color: #FFFFFF;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 19px;
+    max-width: 1400px;
+    width: 100%;
+    font-family: Raleway;
 }
-.container-activites{
-    background-color: #F2F2F2; 
-    padding: -100px;
-    display: flex ;  
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/*css section footer pied de page*/
+footer{
+    background-color: #F2F2F2;
+    margin-left: 3.33%;
+    margin-right: 3.68%;
+    margin-top: 0%;
+    margin-bottom: -10%;
+    display: flex;
+    
+}
+.containre-pied{
+    list-style-type: none;
+    width: 30%;
 }
 
-
- 
+/*fin css section footer pied de page*/
+/*css partie portable*/
+@media screen and (max-width: 768px)  {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/*fin css partie portable*/
+/*css partie tablette*/
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    
+}
+/*fin css partie tablette*/

@@ -17,28 +17,30 @@
             <div class="logo-booki">
                 <img src="images//booki.png" alt="logo booki" title="logo Booki">  
             </div>
-            <nav class="menu">
-                <ul>
-                    <li class="menu-1"><a href="#">Hébergement</a></li> 
-                    <li class="menu-2"><a href="#"> Activités </a></li>
-                </ul>
-                
+            <nav >
+                <a href="#">Hébergement</a>
+                <p>Activités </p>                           
             </nav>
       
         </header>    
 
-        
+       
         <main>
             <!--section rechercher et filtres-->
             <section class="rechercher"> 
-                <h1> Trouve votre hébergement pour des vacances de rêve</h1>
-                <p>
+                <div class="h1">
+                    <h1> Trouve votre hébergement pour des vacances de rêve</h1>
+                </div>   
+            
+                <p class="p1">
                    En plein centre-ville ou en pleine nature
                 </p>
                 <div class="rechercher-filtre">
                     <form class="rechercher-ville" method="get" action="" >
-                        <label for="ville"><i class="fa-solid fa-location-dot" style="color:black;"></i></label>
-                        <input type="search" id="ville" value="Marseille,France" required>
+                        <div class="label-input">
+                            <label for="ville"><i class="icone-recher" class="fa-solid fa-location-dot" style="color:black;"></i></label>
+                            <input type="search" id="ville" value="Marseille,France" required>
+                        </div>
                         <button>Rechercher</button>
                     </form>
                     <ul class="filtre">
@@ -235,19 +237,19 @@
             <!--section actvités à Marseille-->
             <section class="container-activites">
                 <figure>
-                    <img src="Images/vieux_port.jpg" alt="Vieux-Port" width="302px" height="444px">
+                    <img src="Images/vieux_port.jpg" alt="Vieux-Port">
                     <figcaption>Vieux-Port</figcaption> 
                 </figure>
                 <figure>
-                    <img src="Images/fort_de_pomegues.jpg" alt="Fort de Pomègues" width="202px" height="444px" >
+                    <img src="Images/fort_de_pomegues.jpg" alt="Fort de Pomègues" >
                     <figcaption>Fort de Pomègues</figcaption>
                 </figure>
                 <figure>
-                    <img src="Images/parc_national.jpg" alt="Parc national des Calanques"  width="202px" height="444px">
+                    <img src="Images/parc_national.jpg" alt="Parc national des Calanques">
                     <figcaption>Parc national des Calanques</figcaption>
                 </figure>
                 <figure>
-                    <img src="Images/notre_dame.jpg" alt="Notre-Dame-de-la-Garde" width="202px" height="444px">
+                    <img src="Images/notre_dame.jpg" alt="Notre-Dame-de-la-Garde" >
                     <figcaption>Notre-Dame-de-la-Garde</figcaption>
                 </figure>
             </section>
@@ -271,7 +273,8 @@
                 <li> <h3>Assistance</h3></li>
                 <li>Centre d'aide</li>
                 <li>Nous contacter</li>
-            </ul></footer>
+            </ul>
+        </footer>
     </body>
 
 </html>
