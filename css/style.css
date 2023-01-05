@@ -3,42 +3,9 @@ body{
     max-width: 1400px;
     width: 100%;
     font-family: Raleway;
-     border: 2px solid black;
 }
 /* 1400px = 100% donc 14px = 1% */
 /*css entete de page*/
-.logo-booki img {
-    height: 19px;
-    width: 61.09px;
-    margin-top: 44px;
-    margin-left: 3.92%;
-    border: 1px solid black;
-}
-.menu{
-    height: 65px;
-    margin-left: 700px;
-    width: 27.21%;
-    border: 1px solid black;
-    
-}
-nav ul{
-    list-style-type: none;
-    display: flex;    
-}
-.el1 a{
-    text-decoration: none;
-       
-}
-.el1{
-    
-    left: 36.22%;
-    right: 34.12%;
-    margin-right: 207px;
-    border: 1px solid black;
-}
-.el2{
-    border: 1px solid black;
-}
 header{
     margin: 0%;
     padding: 0%;
@@ -46,6 +13,41 @@ header{
     flex-direction: row;
     border: 1px solid black;
 }
+.logo-booki img {
+    height: 19px;
+    width: 61.09px;
+    margin-top: 44px;
+    margin-left: 3.92%;
+    border: 1px solid black;
+}
+nav{
+    height: 65px;
+    margin-left: 63%;
+    padding-left: 0px;
+    width: 27.21%;
+    border: 1px solid black;
+    
+}
+.menu{
+    list-style-type: none;
+    display: flex;  
+    gap: 30%; 
+    justify-content: end;  
+   
+}
+.el1 a{
+    text-decoration: none;
+       
+}
+
+.el1, .el2{
+    
+    padding-top: 29px;
+    border: 1px solid black;
+    
+}
+
+
 
 /*fin css entete de page*/
 /*css section footer pied de page*/
@@ -67,6 +69,11 @@ footer{
 /*css partie portable*/
 @media screen and (max-width: 768px)  {
     footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header{
         display: flex;
         flex-direction: column;
         justify-content: center;
