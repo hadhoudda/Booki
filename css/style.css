@@ -1,87 +1,249 @@
-body{
-    background-color: #FFFFFF;
+/* ======= Règles générales ====== */
+:root {
+    --colorblue: #0065fc;
+    --colorgrey: #d9d9d9;
+    --colorwhite: #deebff;
+}
+body {
     max-width: 1400px;
-    width: 100%;
-    font-family: Raleway;
+    width: 95%;
+    margin: auto;
+    background-color:white;
+    font-family: Raleway, sans-serif;
 }
-/* 1400px = 100% donc 14px = 1% */
-/*css entete de page*/
-header{
-    margin: 0%;
-    padding: 0%;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ======= FIN Règles générales ====== */
+
+/* ======= HEADER ====== */
+.header {
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-bottom: 40px;
 }
-.logo-booki img {
-    height: 19px;
-    width: 61.09px;
-    margin-top: 44px;
-    margin-left: 3.92%;
-    border: 1px solid black;
+
+.logo-booki {
+    margin: 0px;
 }
-nav{
-    height: 65px;
-    margin-left: 63%;
-    padding-left: 0px;
-    width: 27.21%;
-    border: 1px solid black;
+
+.logo {
+    display: flex;
+    height: 45px;
+}
+.color-blue{
+    color:  var(--colorblue);
+}
+.color-grey{
+    color:  var(--colorgrey);
+}
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav_link {
+    font-size: 16px;
+    padding-top: 55px;
+    border-top: 2px solid #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav_link:hover {
+    color: var(--colorblue);
+    border-top: 2px solid var(--colorblue);
+    transition: 0.2s;
+}
+/* =============Fin HEADER ====== */
+
+/*=========== Search==============*/
+
+.search_title {
+    font-size: 22px;
+    margin: 0px;
+}
+
+.search_para {
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+.search {
+    display: flex;
+    margin: 15px 0 25px 0;
+}
+
+.search i {
+    background-color: var(--colorgrey);
+    display: flex;
+    font-size: 20px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search input {
+    font-size: 20px;
+    font-weight: 700;
+    height: 35px;
+    width: 250px;
+    padding: 10px;
+    border: solid 2px var(--colorgrey);
+}
+::placeholder {
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+}
+
+.search_btn {
+    background-color: var(--colorblue);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.search_btn_phone {
+    display: none;
+}
+/*=========== Fin Search==============*/
+/*============= Filtre ===========*/
+.title-filtre{
+    font-weight: bold;
+ 
+}    
+.el-filtre{
+    font-weight: bold;
+    height: 40px;
+    padding-left:  20px;
+    padding-right: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+   
+    
     
 }
-.menu{
-    list-style-type: none;
-    display: flex;  
-    gap: 30%; 
-    justify-content: end;  
+
+.el-filtre:hover{
+    background-color: #DEEBFF;
+}
+.filtre ul {
+    display: flex;
+    align-items: center;
+    
+
+    gap: 20px;
    
 }
-.el1 a{
-    text-decoration: none;
-       
+.espace{
+    padding-right: 13px;
 }
-
-.el1, .el2{
-    
-    padding-top: 29px;
-    border: 1px solid black;
-    
-}
-
-
-
-/*fin css entete de page*/
-/*css section footer pied de page*/
-footer{
-    background-color: #F2F2F2;
-    margin-left: 3.33%;
-    margin-right: 3.68%;
-    margin-top: 0%;
-    margin-bottom: -10%;
+/*============= Fin Filtre ===========*/
+.phots-hebergements {
     display: flex;
     
 }
-.containre-pied{
-    list-style-type: none;
-    width: 30%;
-}
 
-/*fin css section footer pied de page*/
-/*css partie portable*/
-@media screen and (max-width: 768px)  {
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+/* ============ FOOTER ====== */
+footer {
+    background-color: var(--colorgrey);
+    display: flex;
 }
-/*fin css partie portable*/
-/*css partie tablette*/
-@media screen and (max-width: 992px) and (min-width: 769px) {
+.containre-pied {
+    flex: 1 0 30%;
+}
+.footer_link {
+    margin: 10px 0px 10px 0px;
+}
+/* =============Fin FOOTER ====== */
+
+/*Tablette*/
+@media screen and (max-width: 992px) {
+}
+/*fin Tablette*/
+
+/*Smartphone*/
+@media screen and (max-width: 768px) {
+    body {
+        min-width: 320px;
+        width: 100%;
+    }
+    .searching {
+        width: 95%;
+        margin: auto;
+    }
+
+    .search_btn {
+        display: none;
+    }
+    .search_btn_phone {
+        display: block;
+        background-color: var(--colorblue);
+        height: 60px;
+        border: solid 2px transparent;
+        border-radius: 15px;
+        margin-left: -5%;
+    }
+    .search_btn_phone i {
+        color: #fff;
+        background: none;
+    }
+    /* ====== HEADER ====== */
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-booki {
+        margin-top: 20px;
+    }
+
+    .logo {
+        height: 25px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav_link {
+        border-bottom: 4px solid var(--colorgrey);
+        padding-bottom: 18px;
+        width: 50%;
+        padding: 35px 1% 20px 1%;
+        text-align: center;
+    }
+
+    .nav_link:hover {
+        color: var(--mainblue);
+        border-bottom: 4px solid var(--colorblue);
+        border-top: none;
+    }
+    /* ====== Fin HEADER ====== */
+    /* ====== Filter ====== */
     
+    /* ====== Fin Filter ====== */
+    
+    /* ======== FOOTER ====== */
+    footer {
+        flex-direction: column;
+    }
+    .containre-pied {
+        margin-bottom: 0px;
+    }
+    /* =========Fin FOOTER ====== */
 }
-/*fin css partie tablette*/
