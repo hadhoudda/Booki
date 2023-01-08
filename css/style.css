@@ -131,6 +131,7 @@ nav {
 .part-filtre
 {
     display: inherit;
+    
 }
 .el-filtre{
     font-weight: bold;
@@ -149,15 +150,15 @@ nav {
 .el-filtre:hover{
     background-color: #DEEBFF;
 }
-.filtre ul {
+.filtre  {
     display: flex;
-    align-items: center;
+   align-items: center;
     gap: 20px;
     justify-content: flex-start;
    
 }
 .filtre{
-    margin-left: -40px;
+    margin-left: -20px;
 }
 /*============= Fin Filtre ===========*/
 .phots-hebergements {
@@ -180,7 +181,9 @@ footer {
 
 /*Tablette*/
 @media screen and (max-width: 992px) {
+
 }
+
 /*fin Tablette*/
 
 /*Smartphone*/
@@ -242,20 +245,27 @@ footer {
     }
     /* ====== Fin HEADER ====== */
     /* ====== Filter ====== */
-    .part-filtre li{
-        width: 45%;
+    
+    .el-filtre{
+        width: 35%;
+        margin-bottom: 17px;
+    }
+    .filtre{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .part-filtre{
         flex-direction: column;
         flex-basis: 95%;
         justify-content: center;
     }
+   
+    
     /* ====== Fin Filter ====== */
     
     /* ======== FOOTER ====== */
-    footer {
-        flex-direction: column;
-    }
+   
     .containre-pied {
         margin-bottom: 0px;
     }
