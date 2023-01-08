@@ -125,7 +125,11 @@ nav {
 .title-filtre{
     font-weight: bold;
 }    
-.filtre li{
+.filtre li,
+.part-filtre-1,
+.part-filtre-2,
+.part-filtre
+{
     display: inherit;
 }
 .el-filtre{
@@ -138,7 +142,6 @@ nav {
     margin-right: 13px;
     align-items: center;
     
-    
 }
 .el-filtre i{
     padding-right: 10px;
@@ -150,9 +153,12 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: flex-start;
    
 }
-
+.filtre{
+    margin-left: -40px;
+}
 /*============= Fin Filtre ===========*/
 .phots-hebergements {
     display: flex;
@@ -236,7 +242,14 @@ footer {
     }
     /* ====== Fin HEADER ====== */
     /* ====== Filter ====== */
-    
+    .part-filtre li{
+        width: 45%;
+    }
+    .part-filtre{
+        flex-direction: column;
+        flex-basis: 95%;
+        justify-content: center;
+    }
     /* ====== Fin Filter ====== */
     
     /* ======== FOOTER ====== */
