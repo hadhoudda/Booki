@@ -162,9 +162,59 @@ nav {
     margin-left: -20px;
 }
 /*============= Fin Filtre Desktop ===========*/
+/*===============Section Hebergement Desktop===========*/
+.container-hebergement{
+    background-color: var(--colorgrey);
+    Width :65%;
+    Height:626px;
+    border-radius:20px;
 
+}
+h2{
+    padding-top: 42px;
+    padding-left: 40px;
+}
+.text-affich{
+    font-weight: bold;
+    padding:  82% 7% 5% 3%  ;
+    margin-top: 40px;
+}
+.text-heberge,
+h3,
+.icon-star{
+    padding: 0px;
+    padding-left: 2%;
+    margin: 0px;
+}
+.card-heberge img{
+    width: 100%;
+    height: 60%;
+    border-radius:20px 20px 0 0;
+    border: 2px white solid;
+
+}
+
+.card-heberge{
+    background-color: white;
+    Width :246px;
+    height :199px;
+    border-radius:20px;
+    border: 2px white solid;
+}
+.photo-heberge-haut,
+.photo-heberg-bas{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;  
     
+}
 
+/*===============Fin Section Hebergement Desktop===========*/
+    
+/*===============Section Populaire Desktop===========*/
+
+/*===============Fin Section Populaire Desktop===========*/
+    
 /*===============Section Activites Desktop==============*/
 figure {
     max-height: 444px;
@@ -190,7 +240,7 @@ figcaption{
     margin-bottom: 50px;
 
 }
-/*===============Fin Section Activites Desktop==============*/
+/*===============Fin Section Activites Desktop===========*/
 /* ============ FOOTER Desktop ====== */
 footer {
     background-color: var(--colorgrey);
@@ -206,7 +256,14 @@ footer {
 
 /*Tablette*/
 @media screen and (max-width: 992px) {
+/*===============Section Hebergement Tablette===========*/
 
+/*===============Fin Section Hebergement Tablette===========*/
+    
+/*===============Section Populaire Tablette===========*/
+
+/*===============Fin Section Populaire Tablette===========*/
+ 
 }
 
 /**************fin Tablette***************/
@@ -270,8 +327,8 @@ footer {
         border-bottom: 4px solid var(--colorblue);
         border-top: none;
     }
-    /* ====== Fin HEADER smartphone ====== */
-    /* ====== Filter smartphone ====== */
+    /* ====== Fin HEADER Smartphone ====== */
+    /* ====== Filter Smartphone ====== */
     .el-filtre{
         font-weight: bold;
         font-size: 11px;
@@ -292,7 +349,16 @@ footer {
     }
    
     
-    /* ====== Fin Filter smartphone ====== */
+    /* ====== Fin Filter Smartphone ====== */
+
+    /*===============Section Hebergement Smartphone===========*/
+
+/*===============Fin Section Hebergement Smartphone===========*/
+    
+/*===============Section Populaire Smartphone===========*/
+
+/*===============Fin Section Populaire Smartphone===========*/
+    
     /*====== Section Activ smartphone ======*/
     figcaption{
         font-size: 12px;
