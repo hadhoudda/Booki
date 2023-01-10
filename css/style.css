@@ -426,19 +426,20 @@ footer {
     /* ====== Fin Filter Smartphone ====== */
 
     /*===============Section Hebergement & Populaire Smartphone===========*/
-.heberge-popu{
+.photo-heberge-haut{
     flex-direction: column;
-}
-.container-hebergement{
-    flex-direction: column;
+    order: 0;
 }
 .photo-heberg-bas{
     flex-direction: column;
+    order: 1;
 }
-.photo-heberge-haut{
-    flex-direction: column;
-}
+
 .continer-popu{
+    flex-direction: column;
+    order: 2;
+}
+.heberge-popu{
     flex-direction: column;
 }
 
@@ -460,6 +461,7 @@ footer {
         flex-direction: column;
         flex-basis: 80%; 
        justify-content: center;
+       order: 3;
        
     }
      /*====== Fin Section Activ smartphone ======*/
