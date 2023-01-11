@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Agence de voyage Booki</title>
-        <link href="css/normalize.css" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link href="css/normalize.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/32fe4a8f5c.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
             <a href="#" class="logo-booki">
-                <img class="logo" src="images/booki.png" alt="logo booki" />
+                <img class="logo" src="images/booki.png" alt="logo booki" >
             </a>
             <nav>
                 <a href="#hebergements" class="nav_link">Hébergements</a>
@@ -20,7 +20,7 @@
             </nav>
         </header>
 
-        <!---------section search ------------>
+        <!--===========section search ============-->
         <section class="searching">
             <header>
                 <h1 class="search_title">
@@ -32,69 +32,59 @@
             </header>
             <form class="search" action="#" method="post">
                 <i class="fa-solid fa-location-dot"></i>
-                <input
-                    type="text"
-                    name="Ville"
-                    maxlength="20"
-                    minlength="3"
-                    placeholder="Marseillle, France"
-                    required
-                    />
-                <button class="search_btn" type="submit" required>
+                <input  type="text" name="Ville" maxlength="20" minlength="3" placeholder="Marseillle, France" required >
+                <button class="search_btn" type="submit">
                     Rechercher
                 </button>
-                <button class="search_btn_phone" type="submit" required>
+                <button class="search_btn_phone" type="submit" >
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
         </section>
-        <!----------section filtre --------->
+        <!--===============section filtre ============-->
+   
+        <section class="section-filtre" >
+            <h3 class="title-filtre">Filtres</h3> 
+         
+            <div class="filtre1">
+                <p class="el-filtre">
+                    <i class="fa-solid fa-money-bill-wave color-blue "></i>
+                    Economique
+                </p>
+                <p class="el-filtre">
+                    <i class="fa-solid fa-person-dress color-blue " ></i>
+                    Familial
+                </p>
 
-        <section >
-            <ul class="filtre">
-                <li class="title-filtre">Filtres</li>
-                <div class="part-filtre">
-                    <div class="part-filtre-1">
-                        <li class="el-filtre">
-                        <i class="fa-solid fa-money-bill-wave color-blue "></i>
-                        Economique
-                        </li>
-                        <li class="el-filtre">
-                        <i class="fa-solid fa-person-dress color-blue " ></i>
-                        Familial
-                        </li>
-                    </div>
-                    <div class="part-filtre-2">
-                        <li class="el-filtre">
-                        <i class="fa-solid fa-heart color-blue  " ></i>
+            </div>
+            <div class="filtre2">
+                <p class="el-filtre">
+                    <i class="fa-solid fa-heart color-blue  " ></i>
                         Romantique
-                        </li>
-                        <li class="el-filtre">
-                        <i class="fa-solid fa-dog color-blue "></i>
-                        Animaux autorisés
-                        </li>
-                    </div>
+                </p>
+                <p class="el-filtre">
+                    <i class="fa-solid fa-dog color-blue "></i>
+                    Animaux autorisés
+                </p>
                 </div>
-            </ul>
            
+        </section>
             <p>
                 <i class="fa-sharp fa-solid fa-circle-exclamation"> </i>
                 Plus de 500 logements sont disponibles dans cette ville
             </p>
-        </section>
+       
         <main>
             <!--fin section search-->
             <!--section hébergement et populaires-->
             <section class="heberge-popu">
-            <!--------partie hebergement------->
+            <!--=======partie hebergement===========-->
                 <section class="container-hebergement">
                     <h2>Hébergement à Marseille</h2>
                     <section class="div-photo-heberge">
                         <article class="photo-heberge-haut">
                             <div class="card-heberge">
-                                <img src="Images/auberge_canebiere.jpg"
-                                    alt="Auberge la canebiere"
-                                    title="photo d'Auberge la Canebière"/>
+                                <img src="Images/auberge_canebiere.jpg" alt="Auberge la canebiere" title="photo d'Auberge la Canebière">
                                 <div class="photo-heberg">
                                     <h3>Auberge La Canebière</h3>
                                     <p class="text-heberge">Nuit à partir de 25<strong>€</strong></p>
@@ -108,9 +98,7 @@
                                 </div>
                             </div>
                             <div class="card-heberge">
-                                <img src="Images/hotel_port.jpg"
-                                    alt="Hôtel du port"
-                                    title="photo de l'hôtel du port" />
+                                <img src="Images/hotel_port.jpg" alt="Hôtel du port" title="photo de l'hôtel du port">
                                 <div class="photo-heberg">
                                     <h3>Hôtel du port</h3>
                                     <p class="text-heberge">Nuit à partir de 52<strong>€</strong></p>
@@ -124,9 +112,7 @@
                                 </div>
                             </div>
                             <div class="card-heberge">
-                                <img src="Images/hotel_mouette.jpg"
-                                    alt="Hôtel Les mouettes"
-                                    title="photo l'hôtel Les mouettes"/>
+                                <img src="Images/hotel_mouette.jpg" alt="Hôtel Les mouettes" title="photo l'hôtel Les mouettes">
                                 <div class="photo-heberg">
                                     <h3>Hôtel Les mouettes</h3>
                                     <p class="text-heberge">Nuit à partir de 76<strong>€</strong></p>
@@ -142,9 +128,7 @@
                             </article>
                             <article class="photo-heberg-bas">
                             <div class="card-heberge">
-                                <img src="Images/hotel_mer.jpg"
-                                    alt="Hôtel de la mer"
-                                    title="phot de l'hôtel de la mer"/>
+                                <img src="Images/hotel_mer.jpg" alt="Hôtel de la mer" title="phot de l'hôtel de la mer">
                                 <div class="photo-heberg">
                                     <h3>Hôtel La mer</h3>
                                     <p  class="text-heberge">Nuit à partir de 46<strong>€</strong></p>
@@ -158,9 +142,7 @@
                                 </div>
                             </div>
                             <div class="card-heberge">
-                                <img src="Images/auberge_panier.jpg"
-                                    alt="Auberge Le Panier"
-                                    title="phot de l'auberge le panier"/>
+                                <img src="Images/auberge_panier.jpg" alt="Auberge Le Panier" title="phot de l'auberge le panier">
                                 <div class="photo-heberg">
                                     <h3>Auberge Le Panier</h3>
                                     <p class="text-heberge">Nuit à partir de 23<strong>€</strong></p>
@@ -174,9 +156,7 @@
                                 </div>
                             </div>
                             <div class="card-heberge">
-                                <img src="Images/hotel_amina.jpg"
-                                    alt="Hôtel Chez Amina"
-                                    title="photo Hôtel Chez Amina"/>
+                                <img src="Images/hotel_amina.jpg" alt="Hôtel Chez Amina" title="photo Hôtel Chez Amina">
                                 <div class="photo-heberg">
                                     <h3>Hôtel Chez Amina</h3>
                                     <p class="text-heberge">Nuit à partir de 96<strong>€</strong></p>
@@ -205,11 +185,7 @@
                         </div>
                     </header>
                     <article class="popu">
-                        <img
-                            src="Images/hotel_soleil.jpg"
-                            alt="Hôtel Le soleil du matin"
-                            title="photo de l'hôtel Le soleil du matin"/>
-                        <div class="text-popu">
+                        <header class="text-popu">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p class="para-popu">Nuit à partir de 128<strong>€</strong></p>
                             <div class="icon-star-popu"><i class="fa-solid fa-star color-blue"></i>
@@ -218,14 +194,12 @@
                                 <i class="fa-solid fa-star color-blue"></i>
                                 <i class="fa-solid fa-star color-grey"></i>
                             </div>
-                        </div>
+                        </header>
+                        <img src="Images/hotel_soleil.jpg" alt="Hôtel Le soleil du matin" title="photo de l'hôtel Le soleil du matin">
+                        
                     </article>
                     <article class="popu">
-                        <img
-                            src="Images/hotel_eau.jpg"
-                            alt="Chambres d'hôtes Au coeur de l'eau"
-                            title="photo de chambres d'hôtes Au coeur de l'eau"/>
-                        <article class="text-popu">
+                       <header class="text-popu">
                             <h3>Chambres d'hôtes Au coeur de l'eau</h3>
                             <p class="para-popu">Nuit à partir de 71<strong>€</strong></p>
                             <div class="icon-star-popu">
@@ -234,16 +208,13 @@
                                 <i class="fa-solid fa-star color-blue"></i>
                                 <i class="fa-solid fa-star color-blue"></i>
                                 <i class="fa-solid fa-star color-grey"></i>
-                            </i>
                             </div>
-                        </article>
+                        </header>
+                         <img src="Images/hotel_eau.jpg" alt="Chambres d'hôtes Au coeur de l'eau" title="photo de chambres d'hôtes Au coeur de l'eau">
+                        
                     </article>
                     <article class="popu">
-                        <img
-                            src="Images/hotel_bleu.jpg"
-                            alt="Hôtel Bleu et Blanc"
-                            title="photo de l'hôtel bleu et blanc"/>
-                        <article class="text-popu">
+                       <header class="text-popu">
                             <h3>Hôtel Bleu et Blanc</h3>
                             <p class="para-popu">Nuit à partir de 68<strong>€</strong></p>
                             <div class="icon-star-popu">
@@ -253,7 +224,9 @@
                             <i class="fa-solid fa-star color-blue"></i>
                             <i class="fa-solid fa-star color-grey"></i>
                         </div>
-                        </article>
+                    </header>
+                         <img src="Images/hotel_bleu.jpg" alt="Hôtel Bleu et Blanc" title="photo de l'hôtel bleu et blanc">
+                        
                     </article>
                 </section>
             </section>
@@ -265,28 +238,24 @@
                 <h2>Activités à Marseille</h2>
                 <article class="card-activ">
                     <figure>
-                        <img class="phot-activ" src="Images/vieux_port.jpg" alt="Vieux-Port" />
+                        <img class="phot-activ" src="Images/vieux_port.jpg" alt="Vieux-Port" >
                         <figcaption>Vieux-Port</figcaption>
                     </figure>
                 
               
                 <figure>
-                    <img class="phot-activ" src="Images/fort_de_pomegues.jpg"
-                     alt="Fort de Pomègues"/>
+                    <img class="phot-activ" src="Images/fort_de_pomegues.jpg" alt="Fort de Pomègues">
                     <figcaption>Fort de Pomègues</figcaption>
                 </figure>
            
            
                 <figure>
-                    <img  class="phot-activ" src="Images/parc_national.jpg"
-                    alt="Parc national des Calanques"/>
+                    <img  class="phot-activ" src="Images/parc_national.jpg" alt="Parc national des Calanques">
                     <figcaption>Parc national des Calanques</figcaption>
                 </figure>
             
                 <figure>
-                    <img class="phot-activ"
-                        src="Images/notre_dame.jpg"
-                        alt="Notre-Dame-de-la-Garde"/>
+                    <img class="phot-activ" src="Images/notre_dame.jpg" alt="Notre-Dame-de-la-Garde">
                     <figcaption>Notre-Dame-de-la-Garde</figcaption>
                 </figure>
             </article>

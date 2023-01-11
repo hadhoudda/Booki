@@ -122,45 +122,47 @@ nav {
 }
 /*=========== Fin Search Desktop==============*/
 /*============= Filtre Desktop===========*/
+.section-filtre
+{    display : flex;
+
+  align-items: center;
+  
+
+}
+
 .title-filtre{
     font-weight: bold;
+    height: 40px;
+    padding-top: 20px;
+    margin-right: 20px;
+   
 }    
-.filtre li,
-.part-filtre-1,
-.part-filtre-2,
-.part-filtre
-{
+ 
+.filtre1,
+.filtre2{
     display: inherit;
-    
 }
-.el-filtre{
+.el-filtre {
     font-weight: bold;
     font-size: 17px;
-    height: 50px;
-    padding-left:  20px;
-    padding-right: 20px;
+    height: 40px;
+    max-width: 50%;
+    padding:20px  20px 0 20px ;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     margin-right: 13px;
-    align-items: center;
     
+  
 }
-.el-filtre i{
-    padding-right: 10px;
-}
+
 .el-filtre:hover{
     background-color: #DEEBFF;
 }
-.filtre  {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: flex-start;
+
    
-}
-.filtre{
-    margin-left: -20px;
-}
+   
+
+
 /*============= Fin Filtre Desktop ===========*/
 /*===============Section Hebergement Desktop===========*/
 .heberge-popu{
@@ -268,9 +270,10 @@ h3,
 }
 .popu{
     display: flex;
+    flex-direction: row-reverse;
     margin-bottom: 33px;
     
-  
+  justify-content: center;
     height: 20%;
 
     
@@ -406,37 +409,46 @@ footer {
     .el-filtre{
         font-weight: bold;
         font-size: 11px;
-        padding-left:  10px;
-        padding-right: 10px;      
-        width: 35%;
-        margin-bottom: 17px; 
+        padding-left:  5px;
+        padding-right: 5px;    
+        min-width: 80%;
+        margin-bottom: 10px; 
+    
     }
-    .filtre{
-        display: flex;
+    .section-filtre{
+        
         flex-direction: column;
         align-items: flex-start;
-    }
-    .part-filtre{
-        flex-direction: column;
-        flex-basis: 95%;
+        
         justify-content: center;
     }
-   
+    .filtre1,
+    .filtre2{
+        width: 45%;
+       
+    }
     
     /* ====== Fin Filter Smartphone ====== */
 
     /*===============Section Hebergement & Populaire Smartphone===========*/
+
 .photo-heberge-haut{
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     order: 0;
+    height: 30%;
 }
 .photo-heberg-bas{
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     order: 1;
 }
 
 .continer-popu{
     flex-direction: column;
+    justify-content: center;
     order: 2;
 }
 .heberge-popu{
