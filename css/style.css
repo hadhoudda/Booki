@@ -5,7 +5,7 @@
     --colorwhite: #deebff;
 }
 body {
-    /*max-width: 1400px;*/
+    max-width: 1400px;
     width: 95%;
     margin: auto;
     background-color:white;

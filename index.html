@@ -48,40 +48,41 @@
             <div class="filtre1">
                 <p class="el-filtre">
                     <i class="fa-solid fa-money-bill-wave color-blue "></i>
-                    Economique
+                 <span> Economique</span>
+                 <!--ajout span-->
                 </p>
                 <p class="el-filtre">
                     <i class="fa-solid fa-person-dress color-blue " ></i>
-                    Familial
+                    <span>Familial</span>
                 </p>
             </div>
             <div class="filtre2">
                 <p class="el-filtre">
                     <i class="fa-solid fa-heart color-blue  " ></i>
-                        Romantique
+                       <span>Romantique</span> 
                 </p>
                 <p class="el-filtre">
                     <i class="fa-solid fa-dog color-blue "></i>
-                    Animaux autorisés
+                    <span>Animaux autorisés</span>
                 </p>
             </div>   
         </section>
             <p>
                 <i class="fa-sharp fa-solid fa-circle-exclamation"> </i>
-                Plus de 500 logements sont disponibles dans cette ville
+                <span>Plus de 500 logements sont disponibles dans cette ville</span>
             </p>
         <main>
             <!--fin section search-->
             <!--section hébergement et populaires-->
-            <section class="heberge-popu">
+            <div class="heberge-popu">
             <!--=======partie hebergement===========-->
                 <section class="container-hebergement">
                     <h2>Hébergement à Marseille</h2>
-                    <section class="div-photo-heberge">
+                    <div class="div-photo-heberge">
                         <article class="photo-heberge-haut">
                             <a href="#" class="card-heberge">
                                 <img src="Images/auberge_canebiere.jpg" alt="Auberge la canebiere" title="photo d'Auberge la Canebière">
-                                <div class="photo-heberg">
+                                <div class="">
                                     <h3>Auberge La Canebière</h3>
                                     <p class="text-heberge">Nuit à partir de 25<strong>€</strong></p>
                                     <div class="icon-star">
@@ -95,7 +96,7 @@
                             </a>
                             <a href="#" class="card-heberge">
                                 <img src="Images/hotel_port.jpg" alt="Hôtel du port" title="photo de l'hôtel du port">
-                                <div class="photo-heberg">
+                                <div class="card-heberge">
                                     <h3>Hôtel du port</h3>
                                     <p class="text-heberge">Nuit à partir de 52<strong>€</strong></p>
                                     <div class="icon-star">
@@ -109,7 +110,7 @@
                             </a>
                             <a href="#" class="card-heberge">
                                 <img src="Images/hotel_mouette.jpg" alt="Hôtel Les mouettes" title="photo l'hôtel Les mouettes">
-                                <div class="photo-heberg">
+                                <div class="card-heberge">
                                     <h3>Hôtel Les mouettes</h3>
                                     <p class="text-heberge">Nuit à partir de 76<strong>€</strong></p>
                                     <div class="icon-star">
@@ -122,10 +123,10 @@
                                 </div>
                             </a>
                             </article>
-                            <article class="photo-heberg-bas">
+                            <article class="card-heberge-bas">
                             <a href="#" class="card-heberge">
                                 <img src="Images/hotel_mer.jpg" alt="Hôtel de la mer" title="phot de l'hôtel de la mer">
-                                <div class="photo-heberg">
+                                <div class="card-heberge">
                                     <h3>Hôtel La mer</h3>
                                     <p  class="text-heberge">Nuit à partir de 46<strong>€</strong></p>
                                     <div class="icon-star">
@@ -139,7 +140,7 @@
                             </a>
                             <a href="#" class="card-heberge">
                                 <img src="Images/auberge_panier.jpg" alt="Auberge Le Panier" title="phot de l'auberge le panier">
-                                <div class="photo-heberg">
+                                <div class="card-heberge">
                                     <h3>Auberge Le Panier</h3>
                                     <p class="text-heberge">Nuit à partir de 23<strong>€</strong></p>
                                     <div class="icon-star">
@@ -153,7 +154,7 @@
                             </a>
                             <a href="#" class="card-heberge">
                                 <img src="Images/hotel_amina.jpg" alt="Hôtel Chez Amina" title="photo Hôtel Chez Amina">
-                                <div class="photo-heberg">
+                                <div class="card-heberge">
                                     <h3>Hôtel Chez Amina</h3>
                                     <p class="text-heberge">Nuit à partir de 96<strong>€</strong></p>
                                     <div class="icon-star">
@@ -179,17 +180,20 @@
                         </div>
                     </header>
                     <article class="popu">
-                        <header class="text-popu">
-                            <h3>Hôtel Le soleil du matin</h3>
+                        <figure>
+                        <img src="Images/hotel_soleil.jpg" alt="Hôtel Le soleil du matin" title="photo de l'hôtel Le soleil du matin">
+                        <figcaption class="text-popu">
+                        <div><h3>Hôtel Le soleil du matin</h3>
                             <p class="para-popu">Nuit à partir de 128<strong>€</strong></p>
-                            <div class="icon-star-popu"><i class="fa-solid fa-star color-blue"></i>
-                                <i class="fa-solid fa-star color-blue"></i>
-                                <i class="fa-solid fa-star color-blue"></i>
+                        </div>
+                        <div class="icon-star-popu"><i class="fa-solid fa-star color-blue"></i>
+                        <i class="fa-solid fa-star color-blue"></i>
+                            <i class="fa-solid fa-star color-blue"></i>
                                 <i class="fa-solid fa-star color-blue"></i>
                                 <i class="fa-solid fa-star color-grey"></i>
-                            </div>
-                        </header>
-                        <img src="Images/hotel_soleil.jpg" alt="Hôtel Le soleil du matin" title="photo de l'hôtel Le soleil du matin">
+                            </div>    
+                        </figcaption>
+                    </figure>
                         
                     </article>
                     <article class="popu">
@@ -223,7 +227,7 @@
                         
                     </article>
                 </section>
-            </section>
+            </div>
             <!--fin partie les plus populaires-->
 
             <!--fin section hebergement et populaires-->
@@ -260,10 +264,10 @@
                     <a href="#">Fonctionnement du site</a>
                 </li>
                 <li class="footer_link">
-                    <a href="#"></a>Conditions générales
+                    <a href="#">Conditions générales</a>
                 </li>
                 <li class="footer_link">
-                    <a href="#"></a>Données et confidentialité
+                    <a href="#">Données et confidentialité</a>
                 </li>
             </ul>
             <ul class="containre-pied">
