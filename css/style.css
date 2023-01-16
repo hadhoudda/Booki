@@ -2,7 +2,7 @@
 :root {
     --colorblue: #0065fc;
     --colorgrey: #d9d9d9;
-    --colorwhite: #deebff;
+    --colorlightblue: #deebff;
 }
 body {
     max-width: 1400px;
@@ -11,12 +11,10 @@ body {
     background-color:white;
     font-family: Raleway, sans-serif;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 ul {
     list-style: none;
 }
@@ -32,7 +30,6 @@ h3,p{
     margin: 0;
 }
 /* ======= FIN Règles générales ====== */
-
 /* ======= HEADER Desktop====== */
 .header {
     display: flex;
@@ -41,21 +38,14 @@ h3,p{
     align-items: end;
     margin-bottom: 40px;
 }
-
 .logo-booki {
     margin: 0px;
 }
-
 .logo {
     display: flex;
     height: 45px;
 }
-.color-blue{
-    color:  var(--colorblue);
-}
-.color-grey{
-    color:  var(--colorgrey);
-}
+
 nav {
     display: flex;
     align-items: flex-end;
@@ -77,12 +67,16 @@ nav {
 /* =============Fin HEADER Desktop ====== */
 
 /*=========== Search Desktop==============*/
-
-.search_title {
-    font-size: 22px;
-    margin: 0px;
+.color-blue{
+    color:  var(--colorblue);
 }
-
+.color-grey{
+    color:  var(--colorgrey);
+}
+.search_title {
+    padding-bottom: 8px;
+    
+}
 .search_para {
     font-size: 16px;
     margin-bottom: 36px;
@@ -91,79 +85,67 @@ nav {
     display: flex;
     margin: 15px 0 25px 0;
 }
-
 .search i {
     background-color: var(--colorgrey);
-    display: flex;
     font-size: 20px;
     width: 50px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px 0px 0px 15px;
 }
-
 .search input {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     height: 35px;
     width: 250px;
     padding: 10px;
-    border: solid 2px var(--colorgrey);
+    border:  2px solid var(--colorgrey);
+    border-right:  2px solid white;
 }
 ::placeholder {
     font-size: 18px;
     font-weight: 800;
-    color: #000;
-   
+    color: #000; 
 }
-
 .search_btn {
     background-color: var(--colorblue);
     color: #fff;
     font-size: 18px;
     border-radius: 0 15px 15px 0;
-    /*border: white 2px;*/
+    border: 1px solid var(--colorblue);
     cursor: pointer;
     padding: 10px;
     font-weight: 800;
 }
-
 .search_btn_phone {
     display: none;
 }
 /*=========== Fin Search Desktop==============*/
 /*============= Filtre Desktop===========*/
-.section-filtre
-{    display : flex;
-
-  align-items: center;
-  
-
-}
-
-.title-filtre{
+.section-filtre{
     font-weight: bold;
-    height: 40px;
-    padding-top: 20px;
-    margin-right: 20px;
-   
-}    
- 
-.filtre1,
-.filtre2{
-    display: inherit;
+    display : flex;
+    align-items: center;
+    margin-top: 40px;
+} 
+.filtre{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 70%;
 }
 .el-filtre {
     font-weight: bold;
     font-size: 17px;
     height: 40px;
-    max-width: 50%;
-    padding:20px  20px 0 20px ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     border: 2px solid #D9D9D9;
-    border-radius: 25px;
-    margin-right: 13px;
-    
-  
+    border-radius: 25px;    
 }
 
 .el-filtre:hover{
@@ -172,10 +154,6 @@ nav {
 .info{
     padding: 39px 0 39px 0;
 }
-   
-   
-
-
 /*============= Fin Filtre Desktop ===========*/
 /*===============Section Hebergement Desktop===========*/
 .heberge-popu{
@@ -185,11 +163,8 @@ nav {
 .container-hebergement{
     background-color: var(--colorgrey);
     Width :65%;
-   
     border-radius:20px;
     flex: 1 0 60%;
-    
-
 }
 
 .text-affich{
@@ -225,8 +200,6 @@ nav {
     justify-content:space-around;
     margin-top: 30px; 
 }
-
-
 /*===============Fin Section Hebergement Desktop===========*/
     
 /*===============Section Populaire Desktop===========*/
@@ -257,17 +230,13 @@ nav {
     justify-content:stretch;
     align-items: center;
     gap: 25px;
-    
-   
 }
 .popu{
     background-color:white;
     width: 80%;
     border-radius: 20px 20px 20px 20px;
     display: inherit;
-    height: 30%;
-
-}
+    height: 30%;}
 
 .text-popu{
     display: flex;
@@ -277,15 +246,11 @@ nav {
     padding: 15px;
     
 }
-
-
 .popu img{
     width: 30%;
     border-radius: 20px 0 0 20px;
     border: 2px white solid;
 }
-
-
 /*===============Fin Section Populaire Desktop===========*/
     
 /*===============Section Activites Desktop==============*/
@@ -303,7 +268,6 @@ figure {
 figcaption{
     padding-left: 3%;
     padding-top: 2%;
-    
     font-weight: bold;
 }
 .card-activ{
@@ -327,31 +291,22 @@ footer {
 }
 /* =============Fin FOOTER Desktop====== */
 
-/*Tablette*/
+/*********Tablette***********/
 @media screen and (max-width: 992px) {
 /*===============Section Hebergement & populaire Tablette===========*/
-.container-hebergement{
-    
+.container-hebergement{    
     Width :95%;
-   
-      
 }
 .heberge-popu{
     flex-direction: column;
     justify-content: stretch;
     margin: 0;
-    
 }
 .photo-popu{
     flex-direction: row;
-    
 }
-
 }
 /*==========Fin Section Hebergement & Populaire Tablette===========*/
- 
-
-
 /**************fin Tablette***************/
 
 /*****************Smartphone*******************/
@@ -360,12 +315,38 @@ footer {
         min-width: 320px;
         width: 100%;
     }
-    /*=========== Search Smartphone==============*/
-    .searching {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-booki {
+        margin-top: 20px;
+    }
+    .logo {
+        height: 25px;
+    }
+    nav {
+        width: 100%;
+    }
+    .nav_link {
+        border-bottom: 4px solid var(--colorgrey);
+        padding-bottom: 18px;
+        width: 50%;
+        padding: 35px 1% 20px 1%;
+        text-align: center;
+    }
+    .nav_link:hover {
+        color: var(--mainblue);
+        border-bottom: 4px solid var(--colorblue);
+        border-top: none;
+    }
+    /* ====== Fin HEADER Smartphone ====== */
+     /*=========== Search Smartphone==============*/
+     .searching {
         width: 95%;
         margin: auto;
     }
-
+   
     .search_btn {
         display: none;
        
@@ -377,6 +358,7 @@ footer {
         border: solid 2px transparent;
         border-radius: 15px;
         margin-left: -5%;
+    
     }
     .search_btn_phone i {
         color: #fff;
@@ -384,58 +366,27 @@ footer {
     }
       /*===========Fin Search Smartphone==============*/
     /* ====== HEADER Smartphone====== */
-    .header {
+   
+        /* ====== Filter Smartphone ====== */
+    
+    .section-filtre{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        width: 95%;
+        margin: auto;
     }
-
-    .logo-booki {
-        margin-top: 20px;
-    }
-
-    .logo {
-        height: 25px;
-    }
-
-    nav {
+    .filtre{
+        flex-wrap: wrap;
         width: 100%;
+        margin-left:-40px;
     }
-
-    .nav_link {
-        border-bottom: 4px solid var(--colorgrey);
-        padding-bottom: 18px;
-        width: 50%;
-        padding: 35px 1% 20px 1%;
-        text-align: center;
-    }
-
-    .nav_link:hover {
-        color: var(--mainblue);
-        border-bottom: 4px solid var(--colorblue);
-        border-top: none;
-    }
-    /* ====== Fin HEADER Smartphone ====== */
-    /* ====== Filter Smartphone ====== */
     .el-filtre{
+       
+        width:40%;
         font-weight: bold;
         font-size: 11px;
         padding-left:  5px;
         padding-right: 5px;    
-        min-width: 80%;
-        margin-bottom: 10px; 
-    
-    }
-    .section-filtre{
-        
-        flex-direction: column;
-        align-items: flex-start;
-        
-        justify-content: center;
-    }
-    .filtre1,
-    .filtre2{
-        width: 45%;
-       
     }
     
     /* ====== Fin Filter Smartphone ====== */
@@ -444,8 +395,6 @@ footer {
     .container-hebergement{
         background-color: white;
         Width :100%;
-       
-          
     }
 .heberge-popu{
     flex-direction: column;
@@ -459,7 +408,6 @@ footer {
 .card-heberge{
     flex-basis: 95%;
 }
-
 /*======Fin Section Hebergement & Populaire Smartphone===========*/
     
     /*====== Section Activ smartphone ======*/
@@ -478,8 +426,6 @@ footer {
         flex-direction: column;
         flex-basis: 80%; 
        justify-content: center;
-      
-       
     }
      /*====== Fin Section Activ smartphone ======*/
     /* ======== FOOTER smartphone ====== */
@@ -488,8 +434,7 @@ footer {
        flex-basis: 95%;
      }
      footer{
-        margin: 0px;
-       
+        margin: 0px;       
         flex-direction: column;
      }
     /* =========Fin FOOTER smartphone====== */
