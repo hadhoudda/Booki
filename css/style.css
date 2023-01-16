@@ -25,6 +25,11 @@ h2{
     padding-top: 42px;
     padding-left: 40px;
 }
+h3{
+    font-weight: 700;
+    font-size: 16px;
+    
+}
 h3,p{
     padding: 0;
     margin: 0;
@@ -158,50 +163,65 @@ nav {
 /*===============Section Hebergement Desktop===========*/
 .heberge-popu{
     display: flex;
-    gap: 2%;
+    gap: 40px;
 }
+.heberge-popu p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .container-hebergement{
     background-color: var(--colorgrey);
     Width :65%;
     border-radius:20px;
     flex: 1 0 60%;
+    
 }
-
-.text-affich{
-    font-weight: bold;
-    padding:  82% 7% 5% 3%  ;
-    margin-top: 40px;
+.div-photo-heberge{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 31px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.card-heberge{
+    background-color: white;
+    flex-basis: 28%;
+    height :199px;
+    border-radius:20px  ;
+    border: white solid;
+    
 }
 .text-heberge,
 .icon-star{
     padding: 0px;
     margin: 0px;
 }
+
 .card-heberge img{
     width: 100%;
     height: 60%;
     border-radius:20px 20px 0 0;
 }
 
-.card-heberge{
-    background-color: white;
-    max-width :246px;
-    max-height :199px;
-    margin-left: 2%; 
-    margin-right: 2%;
-    border-radius:20px  ;
-    border: white solid;
-    flex-basis: 100%;
+
+.title-photo-heberge{
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
     
 }
-.photo-heberge-haut,
-.photo-heberg-bas{
-    display: flex;
-    justify-content:space-around;
-    margin-top: 30px; 
+
+.affich{
+    padding-top: 40px;
+    padding-bottom: 46px;
+    font-weight:bold ;
+    margin-left: 40px;
 }
 /*===============Fin Section Hebergement Desktop===========*/
-    
+  
 /*===============Section Populaire Desktop===========*/
 .continer-popu{
     background-color:var(--colorgrey);
@@ -221,15 +241,17 @@ nav {
 .head-popu{
     display:flex;
     justify-content: space-between;
-    width: 80%;
-    padding-top: 40px;
+    gap: 118px;
+    padding-top: 42px;
+    
 }
-.photo-popu{
+.div-photo-popu{
     display: flex;
     flex-direction: column;
     justify-content:stretch;
     align-items: center;
-    gap: 25px;
+    flex-basis:  70%;
+    gap: 33px;
 }
 .popu{
     background-color:white;
@@ -294,7 +316,7 @@ footer {
 /*********Tablette***********/
 @media screen and (max-width: 992px) {
 /*===============Section Hebergement & populaire Tablette===========*/
-.container-hebergement{    
+.container-heberge{    
     Width :95%;
 }
 .heberge-popu{
@@ -392,7 +414,7 @@ footer {
     /* ====== Fin Filter Smartphone ====== */
 
     /*======Section Hebergement & Populaire Smartphone===========*/
-    .container-hebergement{
+    .container-heberge{
         background-color: white;
         Width :100%;
     }
