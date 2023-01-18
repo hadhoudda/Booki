@@ -1,7 +1,7 @@
 /* ======= Règles générales ====== */
 :root {
     --colorblue: #0065fc;
-    --colorgrey: #d9d9d9;
+    --colorgrey: #F2F2F2;
     --colorlightblue: #deebff;
 }
 body {
@@ -138,7 +138,7 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
-    width: 70%;
+    flex:1 0 70%;
 }
 .el-filtre {
     font-weight: bold;
@@ -170,11 +170,10 @@ nav {
     font-size: 14px;
 }
 
-.container-hebergement{
+.container-heberge{
     background-color: var(--colorgrey);
-    Width :65%;
     border-radius:20px;
-    flex: 1 0 60%;
+    flex: 1 0 65%;
     
 }
 .div-photo-heberge{
@@ -204,6 +203,7 @@ nav {
     width: 100%;
     height: 60%;
     border-radius:20px 20px 0 0;
+    box-shadow: 2px  2px 2px 2px var(--colorgrey);
 }
 
 
@@ -257,6 +257,7 @@ nav {
     background-color:white;
     width: 80%;
     border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px  2px 2px 2px var(--colorgrey);
     display: inherit;
     height: 30%;}
 
@@ -264,7 +265,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     padding: 15px;
     
 }
@@ -277,26 +277,26 @@ nav {
     
 /*===============Section Activites Desktop==============*/
 figure {
-    
     width: 24%;
     border-radius: 20px;
     box-shadow: 2px  2px 2px 2px var(--colorgrey);
-   }
-   .phot-activ{
+}
+.phot-activ{
     width: 100%;
     height: 90%;
     border-radius: 20px 20px 0px 0px;
  }
 figcaption{
-    padding-left: 3%;
-    padding-top: 2%;
+    margin:10px 0px 0px 19px ;
     font-weight: bold;
+    font-size: 14px;
 }
 .card-activ{
     display: flex;
     justify-content:stretch;
     gap: 5px;
     margin-bottom: 50px;
+    
 
 }
 /*===============Fin Section Activites Desktop===========*/
@@ -315,18 +315,37 @@ footer {
 
 /*********Tablette***********/
 @media screen and (max-width: 992px) {
-/*===============Section Hebergement & populaire Tablette===========*/
+/*======Section Hebergement & populaire Tablette===========*/
 .container-heberge{    
-    Width :95%;
+    flex: 1 0 95%;
 }
+
 .heberge-popu{
     flex-direction: column;
     justify-content: stretch;
     margin: 0;
 }
-.photo-popu{
-    flex-direction: row;
+.continer-popu{
+    
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    width: 95%;
+    padding-bottom: 48px;
+    padding-left: 40px;
 }
+.popu{
+    width: 27%;
+    justify-content: space-between;
+    
+}
+
+
+.div-photo-popu{
+    flex-direction: row;
+
+}
+
 }
 /*==========Fin Section Hebergement & Populaire Tablette===========*/
 /**************fin Tablette***************/
@@ -336,6 +355,9 @@ footer {
     body {
         min-width: 320px;
         width: 100%;
+    }
+    h1{
+        font-size: 24px;
     }
     .header {
         flex-direction: column;
@@ -414,50 +436,53 @@ footer {
     /* ====== Fin Filter Smartphone ====== */
 
     /*======Section Hebergement & Populaire Smartphone===========*/
-    .container-heberge{
-        background-color: white;
-        Width :100%;
-    }
-.heberge-popu{
-    flex-direction: column;
-}
-.photo-heberge-haut,
-.photo-heberg-bas,
-.continer-popu{
-    flex-direction: column;
-    flex-basis: 95%;
+.container-heberge{
+    background-color:var(--colorgrey);
+    Width :100%;
+    border-radius:0;
 }
 .card-heberge{
-    flex-basis: 95%;
+    flex:1 0 95%;
+}
+.continer-popu{
+    flex-direction: column;
+    background-color: white;
+}
+
+.div-photo-popu{
+    flex-direction: column;
+    flex:1 0 95%;
+}
+.popu{
+    width:90%;
 }
 /*======Fin Section Hebergement & Populaire Smartphone===========*/
     
     /*====== Section Activ smartphone ======*/
-    figcaption{
-        font-size: 12px;
-    }
-    .phot-activ{
-        height: 134px;
-    }
-    figure{
-        width: 100%; 
-      
-    }
-    .card-activ{
-      
-        flex-direction: column;
-        flex-basis: 80%; 
-       justify-content: center;
-    }
-     /*====== Fin Section Activ smartphone ======*/
-    /* ======== FOOTER smartphone ====== */
-   
-    .containre-pied {
-       flex-basis: 95%;
-     }
-     footer{
-        margin: 0px;       
-        flex-direction: column;
-     }
-    /* =========Fin FOOTER smartphone====== */
+.container-activ{
+    width: 90%;
+}
+figcaption{
+    font-size: 12px;
+}
+.phot-activ{
+    height: 134px;
+}
+figure{
+    width: 100%;
+}
+.card-activ{
+    flex-direction: column;
+    flex-basis: 80%; 
+    justify-content: center;
+}
+/*====== Fin Section Activ smartphone ======*/
+/* ======== FOOTER smartphone ====== */
+.containre-pied {
+    flex-basis: 95%;
+}
+footer{      
+    flex-direction: column;
+}
+/* =========Fin FOOTER smartphone====== */
 }
