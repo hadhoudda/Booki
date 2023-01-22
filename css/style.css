@@ -21,6 +21,10 @@ ul {
 img{
     object-fit:cover;
 }
+h1{
+    font-weight: 700;
+    font-size: 22px;
+}
 h2{
     padding-top: 42px;
     padding-left: 40px;
@@ -28,12 +32,12 @@ h2{
 h3{
     font-weight: 700;
     font-size: 16px;
-    
 }
 h3,p{
     padding: 0;
     margin: 0;
 }
+
 /* ======= FIN Règles générales ====== */
 /* ======= HEADER Desktop====== */
 .header {
@@ -223,6 +227,12 @@ nav {
 /*===============Fin Section Hebergement Desktop===========*/
   
 /*===============Section Populaire Desktop===========*/
+.icon-info{
+    padding:2px 7px 2px 7px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    margin-right: 5px;
+}
 .continer-popu{
     background-color:var(--colorgrey);
     display: flex;
@@ -255,18 +265,17 @@ nav {
 }
 .popu{
     background-color:white;
-    width: 80%;
+    width: 82%;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 2px  2px 2px 2px var(--colorgrey);
+    box-shadow: 2px 2px 2px 2px var(--colorgrey);
     display: inherit;
-    height: 30%;}
-
+    height: 144px;
+}
 .text-popu{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
-    
 }
 .popu img{
     width: 30%;
@@ -278,6 +287,8 @@ nav {
 /*===============Section Activites Desktop==============*/
 figure {
     width: 24%;
+    padding: 0;
+    margin: 0;
     border-radius: 20px;
     box-shadow: 2px  2px 2px 2px var(--colorgrey);
 }
@@ -294,7 +305,7 @@ figcaption{
 .card-activ{
     display: flex;
     justify-content:stretch;
-    gap: 5px;
+    gap: 43px;
     margin-bottom: 50px;
     
 
@@ -306,7 +317,7 @@ footer {
     display: flex;
 }
 .containre-pied {
-    flex: 1 0 30%;
+    flex: 1 0 27%;
 }
 .footer_link {
     margin: 10px 0px 10px 0px;
