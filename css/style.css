@@ -193,6 +193,7 @@ nav {
     height :199px;
     border-radius:20px  ;
     border: white solid;
+    box-shadow: 2px  2px 2px 2px var(--colorgrey);
 }
 .text-heberge,
 .icon-star{
@@ -447,7 +448,6 @@ footer {
     }
     .card-heberge{
         flex:1 0 95%;
-        box-shadow: 2px  2px 2px 2px var(--colorgrey);
     }
     .continer-popu{
         flex-direction: column;
