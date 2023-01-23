@@ -1,7 +1,7 @@
-/* ======= Règles générales ====== */
+/*======= Règles générales =======*/
 :root {
     --colorblue: #0065fc;
-    --colorgrey: #F2F2F2;
+    --colorgrey: #f2f2f2;
     --colorlightblue: #deebff;
 }
 body {
@@ -26,19 +26,25 @@ h1{
     font-size: 22px;
 }
 h2{
-    padding-top: 42px;
-    padding-left: 40px;
+    font-weight: 700;
+    font-size: 22px; 
+    margin: 30px 0px;
 }
 h3{
     font-weight: 700;
     font-size: 16px;
 }
-h3,p{
+p,
+li{
+    font-size: 16px;
+    font-weight: 400;
+}
+h3,
+p{
     padding: 0;
     margin: 0;
 }
-
-/* ======= FIN Règles générales ====== */
+/* ======= FIN Règles générales ======= */
 /* ======= HEADER Desktop====== */
 .header {
     display: flex;
@@ -52,43 +58,38 @@ h3,p{
 }
 .logo {
     display: flex;
-    height: 45px;
+    height: 19px ;
 }
-
 nav {
     display: flex;
     align-items: flex-end;
 }
-
 .nav_link {
     font-size: 16px;
+    font-weight: 400;
     padding-top: 55px;
     border-top: 2px solid #fff;
     padding-left: 40px;
     padding-right: 40px;
 }
-
 .nav_link:hover {
+    font-weight: 500;
     color: var(--colorblue);
     border-top: 2px solid var(--colorblue);
     transition: 0.2s;
 }
-/* =============Fin HEADER Desktop ====== */
-
-/*=========== Search Desktop==============*/
+/* ======= Fin HEADER Desktop ======= */
+/*=========== Search Desktop =======*/
 .color-blue{
     color:  var(--colorblue);
 }
 .color-grey{
     color:  var(--colorgrey);
 }
-.search_title {
-    padding-bottom: 8px;
-    
-}
 .search_para {
-    font-size: 16px;
-    margin-bottom: 36px;
+    /*font-size: 16px;
+    font-weight: 400; je met au regl gen*/
+    margin-bottom: 26px;/*36*/
 }
 .search {
     display: flex;
@@ -96,7 +97,6 @@ nav {
 }
 .search i {
     background-color: var(--colorgrey);
-    font-size: 20px;
     width: 50px;
     border-radius: 15px 0px 0px 15px;
     display: flex;
@@ -107,25 +107,25 @@ nav {
     font-size: 18px;
     font-weight: 700;
     height: 35px;
-    width: 250px;
+    width: 190px;
     padding: 10px;
     border:  2px solid var(--colorgrey);
     border-right:  2px solid white;
 }
 ::placeholder {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 700;
     color: #000; 
 }
 .search_btn {
     background-color: var(--colorblue);
     color: #fff;
     font-size: 18px;
+    font-weight: 700;
     border-radius: 0 15px 15px 0;
     border: 1px solid var(--colorblue);
     cursor: pointer;
     padding: 10px;
-    font-weight: 800;
 }
 .search_btn_phone {
     display: none;
@@ -133,11 +133,14 @@ nav {
 /*=========== Fin Search Desktop==============*/
 /*============= Filtre Desktop===========*/
 .section-filtre{
-    font-weight: bold;
     display : flex;
     align-items: center;
-    margin-top: 40px;
-} 
+    /*margin-top: 40px;*/
+}
+.title-filtre{
+    font-weight: 700;
+    font-size: 18px;
+}
 .filtre{
     display: flex;
     flex-wrap: nowrap;
@@ -145,7 +148,7 @@ nav {
     flex:1 0 70%;
 }
 .el-filtre {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 17px;
     height: 40px;
     display: flex;
@@ -153,32 +156,29 @@ nav {
     gap: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px solid #D9D9D9;
-    border-radius: 25px;    
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
 }
-
 .el-filtre:hover{
-    background-color: #DEEBFF;
+    background-color: #deebff;
 }
-.info{
-    padding: 39px 0 39px 0;
+.info{ 
+    margin: 20px 0px 25px 0px;
 }
-/*============= Fin Filtre Desktop ===========*/
-/*===============Section Hebergement Desktop===========*/
+/*======= Fin Filtre Desktop =======*/
+/*======= Section Hebergement Desktop =======*/
 .heberge-popu{
     display: flex;
     gap: 40px;
 }
 .heberge-popu p{
-    font-weight: 400;
     font-size: 14px;
 }
-
 .container-heberge{
     background-color: var(--colorgrey);
     border-radius:20px;
-    flex: 1 0 65%;
-    
+    flex: 1 0 60%;
+    padding: 0px 32px;
 }
 .div-photo-heberge{
     display: flex;
@@ -186,8 +186,6 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 31px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 .card-heberge{
     background-color: white;
@@ -195,38 +193,32 @@ nav {
     height :199px;
     border-radius:20px  ;
     border: white solid;
-    
 }
 .text-heberge,
 .icon-star{
     padding: 0px;
     margin: 0px;
 }
-
 .card-heberge img{
     width: 100%;
     height: 60%;
     border-radius:20px 20px 0 0;
     box-shadow: 2px  2px 2px 2px var(--colorgrey);
 }
-
-
 .title-photo-heberge{
     padding-left: 12px;
     display: flex;
     flex-direction: column;
-    
+    height: 40%;
+    justify-content: space-around;
 }
-
 .affich{
-    padding-top: 40px;
-    padding-bottom: 46px;
-    font-weight:bold ;
-    margin-left: 40px;
+    margin: 40px 0 46px 0;
+    font-weight:700 ;
+    font-size: 18px;
 }
-/*===============Fin Section Hebergement Desktop===========*/
-  
-/*===============Section Populaire Desktop===========*/
+/*======= Fin Section Hebergement Desktop =======*/
+/*======= Section Populaire Desktop =======*/
 .icon-info{
     padding:2px 7px 2px 7px;
     border-radius: 50%;
@@ -234,60 +226,55 @@ nav {
     margin-right: 5px;
 }
 .continer-popu{
-    background-color:var(--colorgrey);
+    background-color: var(--colorgrey);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
+    padding: 0px 20px;
 }
-
 .head-popu h2,
 .icon-chart{
     margin: 0;
     padding: 0;
 }
-
 .head-popu{
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    gap: 118px;
-    padding-top: 42px;
-    
+    margin: 30px 0px;
+    align-items: flex-end;
+    width: 100%;
 }
 .div-photo-popu{
     display: flex;
     flex-direction: column;
     justify-content:stretch;
     align-items: center;
-    flex-basis:  70%;
     gap: 33px;
 }
 .popu{
     background-color:white;
-    width: 82%;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 2px 2px 2px 2px var(--colorgrey);
     display: inherit;
-    height: 144px;
+    height: 140px;
 }
 .text-popu{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
+    flex: 55%;
 }
 .popu img{
-    width: 30%;
+    width: 45%;
     border-radius: 20px 0 0 20px;
     border: 2px white solid;
 }
-/*===============Fin Section Populaire Desktop===========*/
-    
-/*===============Section Activites Desktop==============*/
+/*======= Fin Section Populaire Desktop =======*/
+/*======= Section Activites Desktop =======*/
 figure {
     width: 24%;
-    padding: 0;
     margin: 0;
     border-radius: 20px;
     box-shadow: 2px  2px 2px 2px var(--colorgrey);
@@ -299,19 +286,17 @@ figure {
  }
 figcaption{
     margin:10px 0px 0px 19px ;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 16px;
 }
 .card-activ{
     display: flex;
     justify-content:stretch;
-    gap: 43px;
+    gap: 40px;
     margin-bottom: 50px;
-    
-
 }
-/*===============Fin Section Activites Desktop===========*/
-/* ============ FOOTER Desktop ====== */
+/*======= Fin Section Activites Desktop =======*/
+/*======= FOOTER Desktop =======*/
 footer {
     background-color: var(--colorgrey);
     display: flex;
@@ -322,54 +307,55 @@ footer {
 .footer_link {
     margin: 10px 0px 10px 0px;
 }
-/* =============Fin FOOTER Desktop====== */
+/*======= Fin FOOTER Desktop =======*/
 
-/*********Tablette***********/
+/**********Tablette*********/
 @media screen and (max-width: 992px) {
-/*======Section Hebergement & populaire Tablette===========*/
-.container-heberge{    
-    flex: 1 0 95%;
+/*======Section Hebergement & populaire Tablette =======*/
+    .container-heberge{
+        flex: 1 0 95%;
+    }
+    .head-popu {
+        margin: 30px 0px 0px 0px;
+    }
+    .heberge-popu{
+        flex-direction: column;
+        justify-content: stretch;
+        margin: 0;
+    }
+    .continer-popu{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 26px;
+        padding-bottom: 48px;
+        padding-left: 40px;
+    }
+    .popu{
+        width: 33%;
+        justify-content: space-between;
+    }
+    .div-photo-popu{
+        flex-direction: row;
+    }
+    .phot-activ {
+        height: 80%;
+    }
+    .el-filtre {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .filtre {
+        padding: 10px;
+    }
 }
-
-.heberge-popu{
-    flex-direction: column;
-    justify-content: stretch;
-    margin: 0;
-}
-.continer-popu{
-    
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 26px;
-    width: 95%;
-    padding-bottom: 48px;
-    padding-left: 40px;
-}
-.popu{
-    width: 27%;
-    justify-content: space-between;
-    
-}
-
-
-.div-photo-popu{
-    flex-direction: row;
-
-}
-
-}
-/*==========Fin Section Hebergement & Populaire Tablette===========*/
-/**************fin Tablette***************/
-
-/*****************Smartphone*******************/
+/********** Fin Tablette **********/
+/********** Smartphone **********/
 @media screen and (max-width: 768px) {
     body {
         min-width: 320px;
         width: 100%;
     }
-    h1{
-        font-size: 24px;
-    }
+    /*====== HEADER Smartphone ======*/
     .header {
         flex-direction: column;
         align-items: center;
@@ -395,16 +381,17 @@ footer {
         border-bottom: 4px solid var(--colorblue);
         border-top: none;
     }
-    /* ====== Fin HEADER Smartphone ====== */
-     /*=========== Search Smartphone==============*/
+    /*====== Fin HEADER Smartphone ======*/
+    /*=========== Search Smartphone ======*/
      .searching {
         width: 95%;
         margin: auto;
     }
-   
+    .search input {
+        width: 250px;
+    }
     .search_btn {
         display: none;
-       
     }
     .search_btn_phone {
         display: block;
@@ -413,17 +400,13 @@ footer {
         border: solid 2px transparent;
         border-radius: 15px;
         margin-left: -5%;
-    
     }
     .search_btn_phone i {
         color: #fff;
         background: none;
     }
-      /*===========Fin Search Smartphone==============*/
-    /* ====== HEADER Smartphone====== */
-   
-        /* ====== Filter Smartphone ====== */
-    
+    /*======= Fin Search Smartphone =======*/
+    /* ====== Filter Smartphone ====== */
     .section-filtre{
         flex-direction: column;
         align-items: flex-start;
@@ -433,67 +416,71 @@ footer {
     .filtre{
         flex-wrap: wrap;
         width: 100%;
-        margin-left:-40px;
+        padding: 0px;
     }
     .el-filtre{
-       
         width:40%;
-        font-weight: bold;
         font-size: 11px;
         padding-left:  5px;
-        padding-right: 5px;    
+        padding-right: 5px;
     }
-    
-    /* ====== Fin Filter Smartphone ====== */
-
-    /*======Section Hebergement & Populaire Smartphone===========*/
-.container-heberge{
-    background-color:var(--colorgrey);
-    Width :100%;
-    border-radius:0;
-}
-.card-heberge{
-    flex:1 0 95%;
-}
-.continer-popu{
-    flex-direction: column;
-    background-color: white;
-}
-
-.div-photo-popu{
-    flex-direction: column;
-    flex:1 0 95%;
-}
-.popu{
-    width:90%;
-}
-/*======Fin Section Hebergement & Populaire Smartphone===========*/
-    
-    /*====== Section Activ smartphone ======*/
-.container-activ{
-    width: 90%;
-}
-figcaption{
-    font-size: 12px;
-}
-.phot-activ{
-    height: 134px;
-}
-figure{
-    width: 100%;
-}
-.card-activ{
-    flex-direction: column;
-    flex-basis: 80%; 
-    justify-content: center;
-}
-/*====== Fin Section Activ smartphone ======*/
-/* ======== FOOTER smartphone ====== */
-.containre-pied {
-    flex-basis: 95%;
-}
-footer{      
-    flex-direction: column;
-}
-/* =========Fin FOOTER smartphone====== */
+    /*======= Fin Filter Smartphone =======*/
+    /*====== Hebergement & Populaire Smartphone =======*/
+    .info {
+        width: 95%;
+        margin: auto;
+    }
+    .info p {
+        margin-bottom: 25px;
+    }
+    .affich{
+        display: none;
+    }
+    .container-heberge{
+        background-color:white;
+        padding: 0px 20px;
+        border-radius: 0;
+    }
+    .card-heberge{
+        flex:1 0 95%;
+    }
+    .continer-popu{
+        flex-direction: column;
+        background-color:var(--colorgrey);
+        order: -1;
+        padding: 0px 20px 20px 20px;
+    }
+    .div-photo-popu{
+        flex-direction: column;
+        flex:1 0 95%;
+    }
+    .popu{
+        width: 100%;
+    }
+    /*======Fin Hebergement & Populaire Smartphone ======*/
+    /*======= Section Activ smartphone =======*/
+    .container-activ{
+        width: 90%;
+        margin: auto;
+    }
+    .phot-activ{
+        height: 134px;
+    }
+    figure{
+        width: 100%;
+    }
+    .card-activ{
+        flex-direction: column;
+        flex-basis: 80%; 
+        justify-content: center;
+    }
+    /*====== Fin Section Activ smartphone ======*/
+    /* ======== FOOTER smartphone ====== */
+    .containre-pied {
+        flex-basis: 95%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    /*======= Fin FOOTER smartphone =======*/
 }
