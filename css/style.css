@@ -444,10 +444,10 @@ footer {
     .container-heberge{
         background-color:white;
         padding: 0px 20px;
-        border-radius: 0;
     }
     .card-heberge{
         flex:1 0 95%;
+        box-shadow: 2px  2px 2px 2px var(--colorgrey);
     }
     .continer-popu{
         flex-direction: column;
@@ -455,6 +455,7 @@ footer {
         background-color:var(--colorgrey);
         order: -1;
         padding: 0px 20px 20px 20px;
+        border-radius: 0;
     }
     .div-photo-popu{
         flex-direction: column;
