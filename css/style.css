@@ -135,7 +135,6 @@ nav {
 .section-filtre{
     display : flex;
     align-items: center;
-    /*margin-top: 40px;*/
 }
 .title-filtre{
     font-weight: 700;
@@ -164,6 +163,17 @@ nav {
 }
 .info{ 
     margin: 20px 0px 25px 0px;
+}
+.affich{
+    margin: 40px 0 46px 0;
+    font-weight:700 ;
+    font-size: 18px;
+}
+.icon-info{
+    padding:2px 7px 2px 7px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    margin-right: 5px;
 }
 /*======= Fin Filtre Desktop =======*/
 /*======= Section Hebergement Desktop =======*/
@@ -213,19 +223,8 @@ nav {
     height: 40%;
     justify-content: space-around;
 }
-.affich{
-    margin: 40px 0 46px 0;
-    font-weight:700 ;
-    font-size: 18px;
-}
 /*======= Fin Section Hebergement Desktop =======*/
 /*======= Section Populaire Desktop =======*/
-.icon-info{
-    padding:2px 7px 2px 7px;
-    border-radius: 50%;
-    border: 1px solid #D9D9D9;
-    margin-right: 5px;
-}
 .continer-popu{
     background-color: var(--colorgrey);
     display: flex;
@@ -274,7 +273,7 @@ nav {
 }
 /*======= Fin Section Populaire Desktop =======*/
 /*======= Section Activites Desktop =======*/
-figure {
+.photo-activ {
     width: 24%;
     margin: 0;
     border-radius: 20px;
@@ -285,7 +284,7 @@ figure {
     height: 90%;
     border-radius: 20px 20px 0px 0px;
  }
-figcaption{
+h4{
     margin:10px 0px 0px 19px ;
     font-weight: 700;
     font-size: 16px;
@@ -394,7 +393,7 @@ footer {
         margin: auto;
     }
     .search input {
-        width: 250px;
+        width:230px;
     }
     .search_btn {
         display: none;
