@@ -40,12 +40,11 @@ li{
     font-weight: 400;
 }
 h3,
-h4,
 p{
     padding: 0;
     margin: 0;
 }
-/* ======= FIN Règles générales ======= */
+/* ======= End Règles générales ======= */
 /* ======= HEADER Desktop====== */
 .header {
     display: flex;
@@ -79,7 +78,7 @@ nav {
     border-top: 2px solid var(--colorblue);
     transition: 0.2s;
 }
-/* ======= Fin HEADER Desktop ======= */
+/* ======= End HEADER Desktop ======= */
 /*=========== Search Desktop =======*/
 .color-blue{
     color:  var(--colorblue);
@@ -88,9 +87,7 @@ nav {
     color:  var(--colorgrey);
 }
 .search_para {
-    /*font-size: 16px;
-    font-weight: 400; je met au regl gen*/
-    margin-bottom: 26px;/*36*/
+    margin-bottom: 26px;
 }
 .search {
     display: flex;
@@ -120,7 +117,7 @@ nav {
 }
 .search_btn {
     background-color: var(--colorblue);
-    color: #fff;
+    color: #ffff;
     font-size: 18px;
     font-weight: 700;
     border-radius: 0 15px 15px 0;
@@ -131,23 +128,23 @@ nav {
 .search_btn_phone {
     display: none;
 }
-/*=========== Fin Search Desktop==============*/
-/*============= Filtre Desktop===========*/
-.section-filtre{
+/*=========== End Search Desktop==============*/
+/*============= filter Desktop===========*/
+.section-filter{
     display : flex;
     align-items: center;
 }
-.title-filtre{
+.title-filter{
     font-weight: 700;
     font-size: 18px;
 }
-.filtre{
+.filter{
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
     flex:1 0 70%;
 }
-.el-filtre {
+.element-filter {
     font-weight: 700;
     font-size: 17px;
     height: 40px;
@@ -159,13 +156,13 @@ nav {
     border: 2px solid #d9d9d9;
     border-radius: 25px;
 }
-.el-filtre:hover{
+.element-filter:hover{
     background-color: #deebff;
 }
 .info{ 
     margin: 20px 0px 25px 0px;
 }
-.affich{
+.display{
     margin: 40px 0 46px 0;
     font-weight:700 ;
     font-size: 18px;
@@ -176,29 +173,29 @@ nav {
     border: 1px solid #D9D9D9;
     margin-right: 5px;
 }
-/*======= Fin Filtre Desktop =======*/
-/*======= Section Hebergement Desktop =======*/
-.heberge-popu{
+/*======= End filter Desktop =======*/
+/*======= Section accommadation Desktop =======*/
+.accommadation-popular{
     display: flex;
     gap: 40px;
 }
-.heberge-popu p{
+.accommadation-popular p{
     font-size: 14px;
 }
-.container-heberge{
+.container-accommadation{
     background-color: var(--colorgrey);
     border-radius:20px;
     flex: 1 0 60%;
     padding: 0px 32px;
 }
-.div-photo-heberge{
+.div-photo-accommadation{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 31px;
 }
-.card-heberge{
+.card-accommadation{
     background-color: white;
     flex-basis: 28%;
     height :199px;
@@ -206,26 +203,26 @@ nav {
     border: white solid;
     box-shadow: 2px  2px 2px 2px var(--colorlightblue);
 }
-.text-heberge,
+.text-accommadation,
 .icon-star{
     padding: 0px;
     margin: 0px;
 }
-.card-heberge img{
+.card-accommadation img{
     width: 100%;
     height: 60%;
     border-radius:20px 20px 0 0;
 }
-.title-photo-heberge{
+.title-photo-accommadation{
     padding-left: 12px;
     display: flex;
     flex-direction: column;
     height: 40%;
     justify-content: space-around;
 }
-/*======= Fin Section Hebergement Desktop =======*/
-/*======= Section Populaire Desktop =======*/
-.continer-popu{
+/*======= End Section accommadation Desktop =======*/
+/*======= Section Popular Desktop =======*/
+.container-popular{
     background-color: var(--colorgrey);
     display: flex;
     flex-direction: column;
@@ -233,130 +230,126 @@ nav {
     border-radius: 20px;
     padding: 0px 20px;
 }
-.head-popu h2,
+.head-popular h2,
 .icon-chart{
     margin: 0;
     padding: 0;
 }
-.head-popu{
+.head-popular{
     display: flex;
     justify-content: space-between;
     margin: 30px 0px;
     align-items: flex-end;
     width: 100%;
 }
-.div-photo-popu{
+.div-photo-popular{
     display: flex;
     flex-direction: column;
     justify-content:stretch;
     align-items: center;
     gap: 33px;
 }
-.popu{
+.popular{
     background-color:white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 2px 2px 2px 2px var(--colorlightblue);
     display: inherit;
     height: 140px;
 }
-.text-popu{
+.text-popular{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
     flex: 60%;
 }
-.popu img{
+.popular img{
     width: 40%;
     border-radius: 20px 0 0 20px;
     border: 2px white solid;
 }
-/*======= Fin Section Populaire Desktop =======*/
+/*======= End Section Popular Desktop =======*/
 /*======= Section Activites Desktop =======*/
-.articl-activ {
+.articl-activity {
     width: 24%;
     margin: 0;
     border-radius: 20px;
     box-shadow: 2px  2px 2px 2px var(--colorgrey);
 }
-.photo-activ{
+.photo-activity{
     width: 100%;
-    height: 90%;
+    height: 85%;
     border-radius: 20px 20px 0px 0px;
  }
-h4{
-    margin:10px 0px 10px 19px ;
+h4{ margin: 15px 0 10px 15px;
     font-weight: 700;
     font-size: 16px;
 }
-.card-activ{
+.card-activity{
     display: flex;
     justify-content:stretch;
     gap: 40px;
     margin-bottom: 50px;
 }
-/*======= Fin Section Activites Desktop =======*/
+/*======= End Section accommadation Desktop =======*/
 /*======= FOOTER Desktop =======*/
 footer {
     background-color: var(--colorgrey);
     display: flex;
 }
-.containre-pied {
+.containre-footer {
     flex: 1 0 27%;
 }
 .footer_link {
     margin: 10px 0px 10px 0px;
 }
-/*======= Fin FOOTER Desktop =======*/
+/*======= End FOOTER Desktop =======*/
 
-/**********Tablette*********/
+/********** Tablet *********/
 @media screen and (max-width: 992px) {
-    .el-filtre {
+    .element-filter {
         padding-left: 5px;
         padding-right: 5px;
     }
-    .filtre {
+    .filter {
         padding: 10px;
     }
-    .container-heberge{
+    .container-accommadation{
         flex: 1 0 95%;
     }
-    .head-popu {
+    .head-popular {
         margin: 30px 0px 0px 0px;
     }
-    .heberge-popu{
+    .accommadation-popular{
         flex-direction: column;
         justify-content: stretch;
         margin: 0;
     }
-    .continer-popu{
+    .container-popular{
         flex-direction: column;
         align-items: flex-start;
         gap: 26px;
         padding-bottom: 48px;
         padding-left: 40px;
     }
-    .popu{
+    .popular{
         width: 30%;
         justify-content: space-between;
     }
-    .popu h3{
+    .popular h3{
         font-size: 14px;
     }
-    .popu p{
+    .popular p{
         font-size: 13px;
     }
-    .div-photo-popu{
+    .div-photo-popular{
         flex-direction: row;
     }
-    .photo-activ {
+    .photo-activity {
         height: 80%;
     }
-    h4{
-        margin:0;
-    }
 }
-/********** Fin Tablette **********/
+/********** End Tablet **********/
 /********** Smartphone **********/
 @media screen and (max-width: 768px) {
     body {
@@ -389,7 +382,7 @@ footer {
         border-bottom: 4px solid var(--colorblue);
         border-top: none;
     }
-    /*====== Fin HEADER Smartphone ======*/
+    /*====== End Header Smartphone ======*/
     /*=========== Search Smartphone ======*/
      .searching {
         width: 95%;
@@ -413,27 +406,27 @@ footer {
         color: #fff;
         background: none;
     }
-    /*======= Fin Search Smartphone =======*/
+    /*======= End Search Smartphone =======*/
     /* ====== Filter Smartphone ====== */
-    .section-filtre{
+    .section-filter{
         flex-direction: column;
         align-items: flex-start;
         width: 95%;
         margin: auto;
     }
-    .filtre{
+    .filter{
         flex-wrap: wrap;
         width: 100%;
         padding: 0px;
     }
-    .el-filtre{
+    .element-filter{
         width:40%;
         font-size: 11px;
         padding-left:  5px;
         padding-right: 5px;
     }
-    /*======= Fin Filter Smartphone =======*/
-    /*====== Hebergement & Populaire Smartphone =======*/
+    /*======= End Filter Smartphone =======*/
+    /*====== Section accommadation and popular Smartphone =======*/
     .info {
         width: 95%;
         margin: auto;
@@ -441,17 +434,17 @@ footer {
     .info p {
         margin-bottom: 25px;
     }
-    .affich{
+    .display{
         display: none;
     }
-    .container-heberge{
+    .container-accommadation{
         background-color:white;
         padding: 0px 20px;
     }
-    .card-heberge{
+    .card-accommadation{
         flex:1 0 95%;
     }
-    .continer-popu{
+    .container-popular{
         flex-direction: column;
         align-items: stretch;
         background-color:var(--colorgrey);
@@ -459,37 +452,44 @@ footer {
         padding: 0px 20px 20px 20px;
         border-radius: 0;
     }
-    .div-photo-popu{
+    .div-photo-popular{
         flex-direction: column;
         flex:1 0 95%;
     }
-    .popu{
+    .popular{
         width: 100%;
     }
-    /*======Fin Hebergement & Populaire Smartphone ======*/
-    /*======= Section Activ smartphone =======*/
-    .container-activ{
+    .popular h3{
+    font-size: 16px;
+    }
+    .popular p{
+    font-size: 16px;
+    font-weight: 400;
+    }
+    /*======End Section accommadation and popular Smartphone ======*/
+    /*======= Section activity smartphone =======*/
+    .container-activity{
         width: 90%;
         margin: auto;
     }
-    .photo-activ{
+    .photo-activity{
         height: 134px;
     }
-    .articl-activ{
+    .articl-activity{
         width: 100%;
     }
-    .card-activ{
+    .card-activity{
         flex-direction: column;
         flex-basis: 80%; 
         justify-content: center;
     }
-    /*====== Fin Section Activ smartphone ======*/
+    /*====== End Section activity smartphone ======*/
     /* ======== FOOTER smartphone ====== */
-    .containre-pied {
+    .containre-footer {
         flex-basis: 95%;
     }
     footer{
         flex-direction: column;
     }
-    /*======= Fin FOOTER smartphone =======*/
+    /*======= End FOOTER smartphone =======*/
 }
