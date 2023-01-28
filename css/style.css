@@ -1,4 +1,4 @@
-/*======= Règles générales =======*/
+/*======= General Rules =======*/
 :root {
     --colorblue: #0065fc;
     --colorgrey: #f2f2f2;
@@ -10,16 +10,6 @@ body {
     margin: auto;
     background-color:white;
     font-family: Raleway, sans-serif;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-ul {
-    list-style: none;
-}
-img{
-    object-fit:cover;
 }
 h1{
     font-weight: 700;
@@ -34,6 +24,16 @@ h3{
     font-weight: 700;
     font-size: 16px;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+img{
+    object-fit:cover;
+}
 p,
 li{
     font-size: 16px;
@@ -44,8 +44,8 @@ p{
     padding: 0;
     margin: 0;
 }
-/* ======= End Règles générales ======= */
-/* ======= HEADER Desktop====== */
+/* ======= End General Rules ======= */
+/* ======= Header Desktop====== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -78,7 +78,7 @@ nav {
     border-top: 2px solid var(--colorblue);
     transition: 0.2s;
 }
-/* ======= End HEADER Desktop ======= */
+/* ======= End Header Desktop ======= */
 /*=========== Search Desktop =======*/
 .color-blue{
     color:  var(--colorblue);
@@ -129,7 +129,7 @@ nav {
     display: none;
 }
 /*=========== End Search Desktop==============*/
-/*============= filter Desktop===========*/
+/*============= Filter Desktop===========*/
 .section-filter{
     display : flex;
     align-items: center;
@@ -173,8 +173,8 @@ nav {
     border: 1px solid #D9D9D9;
     margin-right: 5px;
 }
-/*======= End filter Desktop =======*/
-/*======= Section accommadation Desktop =======*/
+/*======= End Filter Desktop =======*/
+/*======= Section Accommadation Desktop =======*/
 .accommadation-popular{
     display: flex;
     gap: 40px;
@@ -201,7 +201,7 @@ nav {
     height :199px;
     border-radius:20px  ;
     border: white solid;
-    box-shadow: 2px  2px 2px 2px var(--colorlightblue);
+    box-shadow: 2px  2px 2px 2px #e6e7e9;
 }
 .text-accommadation,
 .icon-star{
@@ -220,7 +220,7 @@ nav {
     height: 40%;
     justify-content: space-around;
 }
-/*======= End Section accommadation Desktop =======*/
+/*======= End Section Accommadation Desktop =======*/
 /*======= Section Popular Desktop =======*/
 .container-popular{
     background-color: var(--colorgrey);
@@ -252,7 +252,7 @@ nav {
 .popular{
     background-color:white;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 2px 2px 2px 2px var(--colorlightblue);
+    box-shadow: 2px  2px 2px 2px #e6e7e9;
     display: inherit;
     height: 140px;
 }
@@ -274,7 +274,7 @@ nav {
     width: 24%;
     margin: 0;
     border-radius: 20px;
-    box-shadow: 2px  2px 2px 2px var(--colorgrey);
+    box-shadow: 2px  2px 2px 2px #e6e7e9;
 }
 .photo-activity{
     width: 100%;
@@ -291,8 +291,8 @@ h4{ margin: 15px 0 10px 15px;
     gap: 40px;
     margin-bottom: 50px;
 }
-/*======= End Section accommadation Desktop =======*/
-/*======= FOOTER Desktop =======*/
+/*======= End Section Accommadation Desktop =======*/
+/*======= Footer Desktop =======*/
 footer {
     background-color: var(--colorgrey);
     display: flex;
@@ -303,15 +303,14 @@ footer {
 .footer_link {
     margin: 10px 0px 10px 0px;
 }
-/*======= End FOOTER Desktop =======*/
-
+/*======= End Footer Desktop =======*/
 /********** Tablet *********/
 @media screen and (max-width: 992px) {
-    .element-filter {
+    .element-filter{
         padding-left: 5px;
         padding-right: 5px;
     }
-    .filter {
+    .filter{
         padding: 10px;
     }
     .container-accommadation{
@@ -356,7 +355,7 @@ footer {
         min-width: 320px;
         width: 100%;
     }
-    /*====== HEADER Smartphone ======*/
+    /*====== Header Smartphone ======*/
     .header {
         flex-direction: column;
         align-items: center;
@@ -466,14 +465,15 @@ footer {
     font-size: 16px;
     font-weight: 400;
     }
-    /*======End Section accommadation and popular Smartphone ======*/
-    /*======= Section activity smartphone =======*/
+    /*======End Section Accommadation And Popular Smartphone ======*/
+    /*======= Section Activity Smartphone =======*/
     .container-activity{
         width: 90%;
         margin: auto;
     }
     .photo-activity{
         height: 134px;
+        object-position: 50% 45%;
     }
     .articl-activity{
         width: 100%;
@@ -484,12 +484,12 @@ footer {
         justify-content: center;
     }
     /*====== End Section activity smartphone ======*/
-    /* ======== FOOTER smartphone ====== */
-    .containre-footer {
+    /* ======== Footer Smartphone ====== */
+    .containre-footer{
         flex-basis: 95%;
     }
     footer{
         flex-direction: column;
     }
-    /*======= End FOOTER smartphone =======*/
+    /*======= End Footer Smartphone =======*/
 }
