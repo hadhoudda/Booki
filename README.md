@@ -1,9 +1,9 @@
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) https://github.com/hadhoudda/Booki.git
 
-# Lien site : https://hadhoudda.github.io/Booki/
+Lien site : https://hadhoudda.github.io/Booki/
 
 <p align="center">
-  <img src="Profil-booki.png">
+  <img src="Images/Profil-booki.png">
 </p>
 
 ### Transformez une maquette en site web avec HTML & CSS
@@ -47,7 +47,7 @@ intégralité (pas uniquement le titre).
 
 ● Les filtres ne doivent pas être fonctionnels - il s’agit juste d’une première version pour valider l’interface
 
-    =>Liens “Hébergements” et “Activités”:
+# Liens “Hébergements” et “Activités”:
 
 ● Les textes “Hébergements” et “Activités”, situés dans l’en-tête, sont des liens. Ils doivent mener respectivement vers la section “Hébergements à Marseille” et
 “Activités à Marseille”.
